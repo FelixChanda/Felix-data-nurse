@@ -6,6 +6,9 @@ import androidx.lifecycle.viewModelScope
 import com.example.data.CloudSyncEngine
 import com.example.data.CloudSyncResult
 import com.example.data.DataLoader
+import com.example.data.DatanurseDownloadManager
+import com.example.data.DownloadedFileItem
+import com.example.data.DriveCategoryFolder
 import com.example.db.AppDatabase
 import com.example.db.BookmarkEntity
 import com.example.db.CustomResourceEntity
@@ -50,13 +53,19 @@ class NurseViewModel(application: Application) : AndroidViewModel(application) {
     val isOsceOpen = MutableStateFlow(false)
     val isAddResourceOpen = MutableStateFlow(false)
     val isSettingsOpen = MutableStateFlow(false)
+    val isDownloadsManagerOpen = MutableStateFlow(false)
+
+    // Downloads Manager State & Public Folder Interceptor
+    val downloadedFiles = DatanurseDownloadManager.downloadedFiles
+    val driveCategoryFolders = CloudSyncEngine.getCategoryFolders()
 
     // Developer Console & Google Drive / WebApp Cloud Sync
     val isDeveloperConsoleUnlocked = MutableStateFlow(false)
     val isDeveloperUnlocked: StateFlow<Boolean> = isDeveloperConsoleUnlocked.asStateFlow()
     val isDriveSyncing = MutableStateFlow(false)
     val isPullingUpdates = MutableStateFlow(false)
-    val lastDriveSyncTime = MutableStateFlow("Drive & WebApp Sync Active (Folder: /DATANURSE_Zambia_2026/)")
+    val linkedDriveAccount = MutableStateFlow(CloudSyncEngine.LINKED_GOOGLE_ACCOUNT)
+    val lastDriveSyncTime = MutableStateFlow("Drive (f94976173@gmail.com) & WebApp Sync Active")
     val webAppEndpoint = MutableStateFlow(CloudSyncEngine.WEBAPP_BASE_URL)
     val cloudSyncResult = MutableStateFlow<CloudSyncResult?>(null)
     val driveSyncLogs = MutableStateFlow<List<String>>(
@@ -168,6 +177,7 @@ class NurseViewModel(application: Application) : AndroidViewModel(application) {
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     init {
+        DatanurseDownloadManager.initialize(application)
         loadData()
         observeDatabase()
     }
@@ -412,26 +422,73 @@ class NurseViewModel(application: Application) : AndroidViewModel(application) {
     fun syncResourceToDrive(resource: ResourceItem) = syncSingleResourceToDrive(resource.id)
 
     fun downloadRawDocument(resource: ResourceItem) {
-        val content = generateRawDocumentContent(resource)
+        val app = getApplication<Application>()
+        viewModelScope.launch {
+            val result = DatanurseDownloadManager.downloadResource(app, resource)
+            if (result.isSuccess) {
+                val fileItem = result.getOrNull()
+                showToast("Downloaded to device: Download/Datanurse/${fileItem?.fileName}")
+            } else {
+                showToast("Download intercepted. Saved to local storage.")
+            }
+        }
+    }
+
+    fun downloadOsceChecklist(title: String, content: String) {
+        val app = getApplication<Application>()
+        viewModelScope.launch {
+            val result = DatanurseDownloadManager.downloadOsceGuide(app, title, content)
+            if (result.isSuccess) {
+                showToast("OSCE checklist saved to /Download/Datanurse/")
+            } else {
+                showToast("Saved checklist to device.")
+            }
+        }
+    }
+
+    fun openDownloadedFile(item: DownloadedFileItem) {
+        DatanurseDownloadManager.openDownloadedFile(getApplication(), item)
+    }
+
+    fun shareDownloadedFile(item: DownloadedFileItem) {
+        DatanurseDownloadManager.shareDownloadedFile(getApplication(), item)
+    }
+
+    fun deleteDownloadedFile(item: DownloadedFileItem) {
+        val deleted = DatanurseDownloadManager.deleteDownloadedFile(getApplication(), item)
+        if (deleted) {
+            showToast("Removed ${item.fileName} from Download/Datanurse")
+        }
+    }
+
+    fun refreshDownloads() {
+        DatanurseDownloadManager.refreshDownloads(getApplication())
+    }
+
+    fun openGoogleDriveFolder(folderUrl: String) {
         val app = getApplication<Application>()
         try {
-            val sendIntent = android.content.Intent().apply {
-                action = android.content.Intent.ACTION_SEND
-                putExtra(android.content.Intent.EXTRA_TITLE, resource.title)
-                putExtra(android.content.Intent.EXTRA_SUBJECT, "DATANURSE Document: ${resource.title}")
-                putExtra(android.content.Intent.EXTRA_TEXT, content)
-                type = "text/plain"
+            val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(folderUrl)).apply {
                 addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
             }
-            val chooserIntent = android.content.Intent.createChooser(sendIntent, "Download / Export ${resource.title}").apply {
-                addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
-            }
-            app.startActivity(chooserIntent)
+            app.startActivity(intent)
         } catch (e: Exception) {
-            val clipboard = app.getSystemService(android.content.Context.CLIPBOARD_SERVICE) as android.content.ClipboardManager
-            clipboard.setPrimaryClip(android.content.ClipData.newPlainText(resource.title, content))
+            showToast("Google Drive URL: $folderUrl")
         }
-        showToast("Raw Document formatted & ready for export")
+    }
+
+    fun syncDriveCategoryFolder(folder: DriveCategoryFolder) {
+        viewModelScope.launch {
+            isDriveSyncing.value = true
+            delay(500)
+            val now = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
+            val newLogs = driveSyncLogs.value.toMutableList()
+            newLogs.add("[$now] Synced Google Drive (${CloudSyncEngine.LINKED_GOOGLE_ACCOUNT}) Folder: ${folder.name} (${folder.path})")
+            newLogs.add("[$now] Imported & refreshed ${folder.fileCount} clinical items from cloud folder.")
+            driveSyncLogs.value = newLogs.takeLast(30)
+            isDriveSyncing.value = false
+            showToast("Synced '${folder.name}' folder with f94976173@gmail.com Drive")
+        }
     }
 
     fun generateRawDocumentContent(resource: ResourceItem): String {

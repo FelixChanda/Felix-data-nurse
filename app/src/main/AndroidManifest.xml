@@ -16,10 +16,10 @@
         android:hardwareAccelerated="true"
         android:theme="@style/Theme.MyApplication">
 
-        <!-- Google AdMob Real/Test Application ID -->
+        <!-- Google AdMob Production Application ID (f94976173@gmail.com) -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-2887402752089984~5632535357"/>
 
         <activity
             android:name=".MainActivity"

@@ -78,6 +78,10 @@ fun MainScreen(
     val isOsceOpen by viewModel.isOsceOpen.collectAsStateWithLifecycle()
     val isAddResourceOpen by viewModel.isAddResourceOpen.collectAsStateWithLifecycle()
     val isSettingsOpen by viewModel.isSettingsOpen.collectAsStateWithLifecycle()
+    val isDownloadsManagerOpen by viewModel.isDownloadsManagerOpen.collectAsStateWithLifecycle()
+    val downloadedFiles by viewModel.downloadedFiles.collectAsStateWithLifecycle()
+    val linkedDriveAccount by viewModel.linkedDriveAccount.collectAsStateWithLifecycle()
+    val driveCategoryFolders = viewModel.driveCategoryFolders
 
     val snackbarHostState = remember { SnackbarHostState() }
     val toastMessage by viewModel.toastMessage.collectAsStateWithLifecycle()
@@ -161,131 +165,136 @@ fun MainScreen(
                         )
                     }
 
-                    Column(modifier = Modifier.fillMaxSize()) {
-                        // Hero Header Banner
-                        HeroBanner(
-                            isVisible = isHeroBannerVisible,
-                            resources = allResources,
-                            allResourcesCount = allResources.size,
-                            searchQuery = searchQuery,
-                            onSearchQueryChange = { viewModel.searchQuery.value = it },
-                            selectedCategory = selectedCategory,
-                            onSelectCategory = { viewModel.selectedCategory.value = it }
-                        )
+                    // Main Scrollable Content: Stationary Message Window (HeroBanner) and FilterBar now scroll smoothly together with resources!
+                    LazyColumn(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .testTag("feed_resources"),
+                        contentPadding = PaddingValues(start = 14.dp, end = 14.dp, top = 8.dp, bottom = 24.dp),
+                        verticalArrangement = Arrangement.spacedBy(10.dp)
+                    ) {
+                        // 1. Hero Header Banner (Scrolls with library list)
+                        item(key = "header_hero_banner") {
+                            HeroBanner(
+                                isVisible = isHeroBannerVisible,
+                                resources = allResources,
+                                allResourcesCount = allResources.size,
+                                searchQuery = searchQuery,
+                                onSearchQueryChange = { viewModel.searchQuery.value = it },
+                                selectedCategory = selectedCategory,
+                                onSelectCategory = { viewModel.selectedCategory.value = it }
+                            )
+                        }
 
-                        // Category & Domain Filter Chips
-                        CategoryFilterBar(
-                            selectedCategory = selectedCategory,
-                            onCategorySelected = { viewModel.selectedCategory.value = it },
-                            selectedYear = selectedYear,
-                            onYearSelected = { viewModel.selectedYear.value = it },
-                            selectedDomain = selectedDomain,
-                            onDomainSelected = { viewModel.selectedDomain.value = it }
-                        )
+                        // 2. Category & Domain Filter Chips (Scrolls with library list)
+                        item(key = "header_category_filter_bar") {
+                            CategoryFilterBar(
+                                selectedCategory = selectedCategory,
+                                onCategorySelected = { viewModel.selectedCategory.value = it },
+                                selectedYear = selectedYear,
+                                onYearSelected = { viewModel.selectedYear.value = it },
+                                selectedDomain = selectedDomain,
+                                onDomainSelected = { viewModel.selectedDomain.value = it }
+                            )
+                        }
 
-                        // Saved Filter Pill indicator
+                        // 3. Saved Filter Pill indicator
                         if (showBookmarksOnly) {
-                            Surface(
-                                color = Color(0xFF0C4A6E),
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .padding(horizontal = 14.dp, vertical = 4.dp),
-                                shape = RoundedCornerShape(8.dp)
-                            ) {
-                                Row(
-                                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
-                                    verticalAlignment = Alignment.CenterVertically,
-                                    horizontalArrangement = Arrangement.SpaceBetween
+                            item(key = "header_saved_pill") {
+                                Surface(
+                                    color = Color(0xFF0C4A6E),
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(vertical = 2.dp),
+                                    shape = RoundedCornerShape(8.dp)
                                 ) {
-                                    Row(verticalAlignment = Alignment.CenterVertically) {
-                                        Icon(Icons.Default.Bookmark, contentDescription = null, tint = Color(0xFF38BDF8), modifier = Modifier.size(16.dp))
-                                        Spacer(modifier = Modifier.width(6.dp))
-                                        Text(
-                                            text = "Showing $bookmarkedCount Bookmarked Resources",
-                                            fontSize = 11.sp,
-                                            fontWeight = FontWeight.Bold,
-                                            color = Color.White
-                                        )
-                                    }
-                                    TextButton(
-                                        onClick = { viewModel.showBookmarksOnly.value = false },
-                                        contentPadding = PaddingValues(0.dp)
+                                    Row(
+                                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
+                                        verticalAlignment = Alignment.CenterVertically,
+                                        horizontalArrangement = Arrangement.SpaceBetween
                                     ) {
-                                        Text("Show All", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color(0xFF38BDF8))
+                                        Row(verticalAlignment = Alignment.CenterVertically) {
+                                            Icon(Icons.Default.Bookmark, contentDescription = null, tint = Color(0xFF38BDF8), modifier = Modifier.size(16.dp))
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text(
+                                                text = "Showing $bookmarkedCount Bookmarked Resources",
+                                                fontSize = 11.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = Color.White
+                                            )
+                                        }
+                                        TextButton(
+                                            onClick = { viewModel.showBookmarksOnly.value = false },
+                                            contentPadding = PaddingValues(0.dp)
+                                        ) {
+                                            Text("Show All", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color(0xFF38BDF8))
+                                        }
                                     }
                                 }
                             }
                         }
 
-                        // Main Resources Feed List
+                        // 4. Main Resources Feed List or Empty State
                         if (resources.isEmpty()) {
-                            Box(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .weight(1f)
-                                    .padding(24.dp),
-                                contentAlignment = Alignment.Center
-                            ) {
-                                Column(
-                                    horizontalAlignment = Alignment.CenterHorizontally,
-                                    verticalArrangement = Arrangement.Center
+                            item(key = "empty_state") {
+                                Box(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(vertical = 32.dp, horizontal = 16.dp),
+                                    contentAlignment = Alignment.Center
                                 ) {
-                                    Icon(
-                                        imageVector = Icons.Default.SearchOff,
-                                        contentDescription = null,
-                                        modifier = Modifier.size(48.dp),
-                                        tint = Color(0xFF64748B)
-                                    )
-                                    Spacer(modifier = Modifier.height(12.dp))
-                                    Text(
-                                        text = "No matching nursing resources found",
-                                        fontWeight = FontWeight.Bold,
-                                        fontSize = 15.sp,
-                                        color = Color.White
-                                    )
-                                    Spacer(modifier = Modifier.height(6.dp))
-                                    Text(
-                                        text = "Try adjusting your search query, domain filters, or year level.",
-                                        fontSize = 11.sp,
-                                        color = Color(0xFF94A3B8)
-                                    )
-                                    Spacer(modifier = Modifier.height(14.dp))
-                                    Button(
-                                        onClick = {
-                                            viewModel.searchQuery.value = ""
-                                            viewModel.selectedCategory.value = "all"
-                                            viewModel.selectedYear.value = "All Years"
-                                            viewModel.selectedDomain.value = "All Domains"
-                                            viewModel.showBookmarksOnly.value = false
-                                        },
-                                        shape = RoundedCornerShape(8.dp),
-                                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0D9488))
+                                    Column(
+                                        horizontalAlignment = Alignment.CenterHorizontally,
+                                        verticalArrangement = Arrangement.Center
                                     ) {
-                                        Text("Reset All Filters", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                                        Icon(
+                                            imageVector = Icons.Default.SearchOff,
+                                            contentDescription = null,
+                                            modifier = Modifier.size(48.dp),
+                                            tint = Color(0xFF64748B)
+                                        )
+                                        Spacer(modifier = Modifier.height(12.dp))
+                                        Text(
+                                            text = "No matching nursing resources found",
+                                            fontWeight = FontWeight.Bold,
+                                            fontSize = 15.sp,
+                                            color = Color.White
+                                        )
+                                        Spacer(modifier = Modifier.height(6.dp))
+                                        Text(
+                                            text = "Try adjusting your search query, domain filters, or year level.",
+                                            fontSize = 11.sp,
+                                            color = Color(0xFF94A3B8)
+                                        )
+                                        Spacer(modifier = Modifier.height(14.dp))
+                                        Button(
+                                            onClick = {
+                                                viewModel.searchQuery.value = ""
+                                                viewModel.selectedCategory.value = "all"
+                                                viewModel.selectedYear.value = "All Years"
+                                                viewModel.selectedDomain.value = "All Domains"
+                                                viewModel.showBookmarksOnly.value = false
+                                            },
+                                            shape = RoundedCornerShape(8.dp),
+                                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0D9488))
+                                        ) {
+                                            Text("Reset All Filters", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                                        }
                                     }
                                 }
                             }
                         } else {
-                            LazyColumn(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .weight(1f)
-                                    .testTag("feed_resources"),
-                                contentPadding = PaddingValues(horizontal = 14.dp, vertical = 8.dp),
-                                verticalArrangement = Arrangement.spacedBy(10.dp)
-                            ) {
-                                items(
-                                    items = resources,
-                                    key = { it.id }
-                                ) { item ->
-                                    ResourceCard(
-                                        resource = item,
-                                        onOpenDetail = { viewModel.activeDetailItem.value = item },
-                                        onOpenFlashcards = { viewModel.activeFlashcardResource.value = item },
-                                        onOpenQuiz = { viewModel.activeQuizResource.value = item },
-                                        onToggleBookmark = { viewModel.toggleBookmark(item.id) }
-                                    )
-                                }
+                            items(
+                                items = resources,
+                                key = { it.id }
+                            ) { item ->
+                                ResourceCard(
+                                    resource = item,
+                                    onOpenDetail = { viewModel.activeDetailItem.value = item },
+                                    onOpenFlashcards = { viewModel.activeFlashcardResource.value = item },
+                                    onOpenQuiz = { viewModel.activeQuizResource.value = item },
+                                    onToggleBookmark = { viewModel.toggleBookmark(item.id) }
+                                )
                             }
                         }
                     }
@@ -356,22 +365,42 @@ fun MainScreen(
                 )
             }
 
+            if (isDownloadsManagerOpen) {
+                DownloadsManagerSheet(
+                    downloadedFiles = downloadedFiles,
+                    onOpenFile = { viewModel.openDownloadedFile(it) },
+                    onShareFile = { viewModel.shareDownloadedFile(it) },
+                    onDeleteFile = { viewModel.deleteDownloadedFile(it) },
+                    onRefreshDownloads = { viewModel.refreshDownloads() },
+                    onDismiss = { viewModel.isDownloadsManagerOpen.value = false }
+                )
+            }
+
             if (isSettingsOpen) {
                 SettingsSheet(
                     quizHistory = quizHistory,
                     isDeveloperUnlocked = isDeveloperUnlocked,
                     isDriveSyncing = isDriveSyncing,
                     isPullingUpdates = isPullingUpdates,
+                    linkedDriveAccount = linkedDriveAccount,
+                    driveCategoryFolders = driveCategoryFolders,
                     webAppEndpoint = webAppEndpoint,
                     lastDriveSyncTime = lastDriveSyncTime,
                     driveSyncLogs = driveSyncLogs,
                     wallpaperPreset = wallpaperPreset,
                     isWallpaperEnabled = isWallpaperEnabled,
+                    downloadedCount = downloadedFiles.size,
                     onSetWallpaperPreset = { viewModel.setWallpaperPreset(it) },
                     onToggleWallpaper = { viewModel.toggleWallpaper(it) },
                     onSecretTap = { viewModel.onDeveloperSecretTap() },
                     onSyncAllDrive = { viewModel.syncAllResourcesToDrive() },
                     onPullRemoteUpdates = { viewModel.pullRemoteSyncUpdates() },
+                    onSyncDriveFolder = { viewModel.syncDriveCategoryFolder(it) },
+                    onOpenDriveFolder = { viewModel.openGoogleDriveFolder(it) },
+                    onOpenDownloadsManager = {
+                        viewModel.isSettingsOpen.value = false
+                        viewModel.isDownloadsManagerOpen.value = true
+                    },
                     onImportManifestJson = { viewModel.importManifestJson(it) },
                     onCopyWebAppLink = { viewModel.copyWebAppLink() },
                     onExportJson = { viewModel.exportDatabaseJson() },

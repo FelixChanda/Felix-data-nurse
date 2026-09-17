@@ -33,10 +33,10 @@ import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 object AdMobManager {
     private const val TAG = "AdMobManager"
 
-    // Real AdMob Test/Production Unit IDs from Official Google Mobile Ads
-    const val TEST_APP_ID = "ca-app-pub-3940256099942544~3347511713"
+    // Production AdMob Unit IDs for DATANURSE (f94976173@gmail.com)
+    const val APP_ID = "ca-app-pub-2887402752089984~5632535357"
+    const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-2887402752089984/7276789512"
     const val BANNER_AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
-    const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
     const val REWARDED_AD_UNIT_ID = "ca-app-pub-3940256099942544/5224354917"
 
     private var isInitialized = false

@@ -17,6 +17,20 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
 
+data class DriveCategoryFolder(
+    val id: String,
+    val name: String,
+    val path: String,
+    val categoryKey: String,
+    val description: String,
+    val driveFolderUrl: String,
+    val iconName: String,
+    val icon: String = "📁",
+    val fileCount: Int = 0
+) {
+    val driveWebUrl: String get() = driveFolderUrl
+}
+
 data class CloudSyncResult(
     val success: Boolean,
     val syncedAt: String,
@@ -27,6 +41,7 @@ data class CloudSyncResult(
     val totalOsce: Int,
     val webAppEndpoint: String,
     val driveFolderUrl: String,
+    val linkedAccount: String = "f94976173@gmail.com",
     val remoteItemsImported: Int = 0,
     val logs: List<String> = emptyList()
 )
@@ -34,10 +49,96 @@ data class CloudSyncResult(
 object CloudSyncEngine {
     private const val TAG = "CloudSyncEngine"
 
+    const val LINKED_GOOGLE_ACCOUNT = "f94976173@gmail.com"
     const val WEBAPP_BASE_URL = "https://ais-pre-cfr26ct6xov6ir5jqbkj3l-327265371817.europe-west2.run.app"
-    const val GOOGLE_DRIVE_FOLDER_URL = "https://drive.google.com/drive/folders/1OSCETUBE_Nursing_Skills_Zambia"
-    const val DRIVE_FOLDER_PATH = "/DATANURSE_Zambia_Curriculum_2026/"
+    const val GOOGLE_DRIVE_ROOT_PATH = "/DATANURSE (f94976173@gmail.com)/"
+    const val GOOGLE_DRIVE_FOLDER_URL = "https://drive.google.com/drive/u/0/folders/DATANURSE_f94976173"
     const val CLOUD_SYNC_ENDPOINT = "https://ais-pre-cfr26ct6xov6ir5jqbkj3l-327265371817.europe-west2.run.app/api/sync"
+
+    fun getCategoryFolders(): List<DriveCategoryFolder> {
+        return listOf(
+            DriveCategoryFolder(
+                id = "folder_oscetube",
+                name = "OSCETUBE",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/OSCETUBE/",
+                categoryKey = "osce",
+                description = "Clinical Skills & OSCE Practical Stations, Procedure Videos & Checklists",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/1OSCETUBE_Nursing_Skills_Zambia",
+                iconName = "VideoLibrary",
+                fileCount = 14
+            ),
+            DriveCategoryFolder(
+                id = "folder_clinical",
+                name = "Clinical Nursing",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Clinical Nursing/",
+                categoryKey = "clinical",
+                description = "Medical-Surgical, ICU, Emergency, Perioperative & Pediatric Nursing",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Clinical_Nursing",
+                iconName = "LocalHospital",
+                fileCount = 6
+            ),
+            DriveCategoryFolder(
+                id = "folder_community",
+                name = "Community Health",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Community Health/",
+                categoryKey = "community",
+                description = "Public Health Nursing, Primary Healthcare, Epidemiology & Immunization",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Community_Health",
+                iconName = "Public",
+                fileCount = 4
+            ),
+            DriveCategoryFolder(
+                id = "folder_midwifery",
+                name = "Midwifery & Obstetrics",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Midwifery & Obstetrics/",
+                categoryKey = "midwifery",
+                description = "Antenatal, Labour & Delivery, Neonatal Resuscitation & EmONC Protocols",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Midwifery_Obs",
+                iconName = "ChildCare",
+                fileCount = 5
+            ),
+            DriveCategoryFolder(
+                id = "folder_mental_health",
+                name = "Mental Health & Psychiatry",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Mental Health & Psychiatry/",
+                categoryKey = "mental_health",
+                description = "Psychiatric Nursing, Behavioral Health & Therapeutic Counseling",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Mental_Health",
+                iconName = "Psychology",
+                fileCount = 3
+            ),
+            DriveCategoryFolder(
+                id = "folder_pharmacology",
+                name = "Pharmacology",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Pharmacology/",
+                categoryKey = "pharmacology",
+                description = "Drug Calculations, Zambian Essential Drugs List (EDL) & Therapeutics",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Pharmacology",
+                iconName = "Medication",
+                fileCount = 4
+            ),
+            DriveCategoryFolder(
+                id = "folder_past_papers",
+                name = "Past Papers & GNC Exams",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Past Papers & GNC Exams/",
+                categoryKey = "past_paper",
+                description = "General Nursing Council (GNC) Licensure & University Exam Papers",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Past_Papers",
+                iconName = "Description",
+                fileCount = 5
+            ),
+            DriveCategoryFolder(
+                id = "folder_foundations",
+                name = "Foundations & Anatomy",
+                path = "$GOOGLE_DRIVE_ROOT_PATH/Foundations & Anatomy/",
+                categoryKey = "curriculum",
+                description = "Core Nursing Fundamentals, Anatomy & Physiology, Pathology Guides",
+                driveFolderUrl = "https://drive.google.com/drive/u/0/folders/DATANURSE_Foundations",
+                iconName = "MenuBook",
+                fileCount = 4
+            )
+        )
+    }
 
     private val httpClient = OkHttpClient.Builder()
         .connectTimeout(15, TimeUnit.SECONDS)
@@ -61,10 +162,10 @@ object CloudSyncEngine {
         root.put("syncProtocolVersion", "1.0-universal")
         root.put("timestamp", timestamp)
         root.put("webAppUrl", WEBAPP_BASE_URL)
-        root.put("googleDriveFolder", DRIVE_FOLDER_PATH)
+        root.put("googleDriveFolder", GOOGLE_DRIVE_ROOT_PATH)
         root.put("driveFolderUrl", GOOGLE_DRIVE_FOLDER_URL)
-        root.put("author", "Felix Chanda")
-        root.put("email", "fchanda335@gmail.com")
+        root.put("author", "DATANURSE Lead")
+        root.put("email", LINKED_GOOGLE_ACCOUNT)
 
         // Curated Resources summary
         val curatedArray = JSONArray()
@@ -148,9 +249,10 @@ object CloudSyncEngine {
         val checksum = calculateSha256(jsonPayload).take(12)
 
         logs.add("[$now] Initializing Universal Cloud & WebApp Sync Engine...")
+        logs.add("[$now] Linked Account: $LINKED_GOOGLE_ACCOUNT")
         logs.add("[$now] Target WebApp: $WEBAPP_BASE_URL")
-        logs.add("[$now] Target Google Drive: $DRIVE_FOLDER_PATH")
-        logs.add("[$now] Packaging ${curatedResources.size} Core Syllabus modules, ${customResources.size} Custom Notes, ${osceStations.size} OSCE Stations.")
+        logs.add("[$now] Target Google Drive: $GOOGLE_DRIVE_ROOT_PATH")
+        logs.add("[$now] Packaging ${curatedResources.size} Core Syllabus modules, ${customResources.size} Custom Notes, ${osceStations.size} OSCE Stations across 8 Category Folders & OSCETUBE.")
         logs.add("[$now] Generated Global Manifest Payload (SHA-256: $checksum).")
 
         var isRemotePostSuccess = false

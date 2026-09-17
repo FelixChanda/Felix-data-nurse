@@ -28,6 +28,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.data.DriveCategoryFolder
 import com.example.db.QuizHistoryEntity
 import com.example.ui.theme.*
 import java.text.SimpleDateFormat
@@ -40,16 +41,22 @@ fun SettingsSheet(
     isDeveloperUnlocked: Boolean = false,
     isDriveSyncing: Boolean = false,
     isPullingUpdates: Boolean = false,
+    linkedDriveAccount: String = "f94976173@gmail.com",
+    driveCategoryFolders: List<DriveCategoryFolder> = emptyList(),
     webAppEndpoint: String = "https://ais-pre-cfr26ct6xov6ir5jqbkj3l-327265371817.europe-west2.run.app",
     lastDriveSyncTime: String = "Active",
     driveSyncLogs: List<String> = emptyList(),
     wallpaperPreset: String = "Atmospheric Dark",
     isWallpaperEnabled: Boolean = true,
+    downloadedCount: Int = 0,
     onSetWallpaperPreset: (String) -> Unit = {},
     onToggleWallpaper: (Boolean) -> Unit = {},
     onSecretTap: () -> Unit = {},
     onSyncAllDrive: () -> Unit = {},
     onPullRemoteUpdates: () -> Unit = {},
+    onSyncDriveFolder: (DriveCategoryFolder) -> Unit = {},
+    onOpenDriveFolder: (String) -> Unit = {},
+    onOpenDownloadsManager: () -> Unit = {},
     onImportManifestJson: (String) -> Unit = {},
     onCopyWebAppLink: () -> Unit = {},
     onExportJson: () -> String = { "" },
@@ -452,6 +459,208 @@ fun SettingsSheet(
                                 Icon(Icons.Default.Input, contentDescription = null, modifier = Modifier.size(14.dp), tint = Color(0xFFA78BFA))
                                 Spacer(modifier = Modifier.width(6.dp))
                                 Text("Import Shared Drive / WebApp Manifest Payload", fontSize = 11.sp, color = Color(0xFFA78BFA), fontWeight = FontWeight.SemiBold)
+                            }
+                        }
+                    }
+                }
+
+                // Dedicated Datanurse Downloads Manager Card (/Download/Datanurse/)
+                item {
+                    Card(
+                        shape = RoundedCornerShape(14.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color(0xFF0F2338)),
+                        border = BorderStroke(1.dp, Color(0xFF38BDF8).copy(alpha = 0.45f))
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                                    Box(
+                                        modifier = Modifier
+                                            .size(40.dp)
+                                            .clip(RoundedCornerShape(10.dp))
+                                            .background(Color(0xFF0284C7)),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        Icon(Icons.Default.DownloadForOffline, contentDescription = null, tint = Color.White, modifier = Modifier.size(24.dp))
+                                    }
+                                    Column {
+                                        Text("Datanurse Downloads Manager", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = Color.White)
+                                        Text("Location: /Download/Datanurse/", fontSize = 10.sp, color = Color(0xFF38BDF8), fontFamily = FontFamily.Monospace)
+                                    }
+                                }
+
+                                Surface(
+                                    shape = RoundedCornerShape(12.dp),
+                                    color = Color(0xFF0369A1)
+                                ) {
+                                    Text(
+                                        text = "$downloadedCount Files Saved",
+                                        fontSize = 10.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = Color.White,
+                                        modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp)
+                                    )
+                                }
+                            }
+
+                            Text(
+                                text = "Whenever you download documents, past papers, or clinical checklists, they are automatically saved to your device's '/Download/Datanurse/' folder and indexed for offline reading and sharing.",
+                                fontSize = 11.sp,
+                                color = Color(0xFFCBD5E1),
+                                lineHeight = 15.sp
+                            )
+
+                            Button(
+                                onClick = onOpenDownloadsManager,
+                                shape = RoundedCornerShape(8.dp),
+                                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0284C7)),
+                                modifier = Modifier.fillMaxWidth().height(38.dp)
+                            ) {
+                                Icon(Icons.Default.FolderOpen, contentDescription = null, modifier = Modifier.size(16.dp))
+                                Spacer(modifier = Modifier.width(6.dp))
+                                Text("Open Downloads Manager ($downloadedCount)", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                            }
+                        }
+                    }
+                }
+
+                // Linked Google Drive Account & Category Folders (f94976173@gmail.com)
+                item {
+                    Card(
+                        shape = RoundedCornerShape(14.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color(0xFF131F2E)),
+                        border = BorderStroke(1.dp, Color(0xFF10B981).copy(alpha = 0.45f))
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                                    Box(
+                                        modifier = Modifier
+                                            .size(40.dp)
+                                            .clip(RoundedCornerShape(10.dp))
+                                            .background(Color(0xFF059669)),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        Icon(Icons.Default.CloudSync, contentDescription = null, tint = Color.White, modifier = Modifier.size(24.dp))
+                                    }
+                                    Column {
+                                        Text("Linked Google Drive Account", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = Color.White)
+                                        Text(linkedDriveAccount, fontSize = 11.sp, color = Color(0xFF34D399), fontWeight = FontWeight.SemiBold)
+                                    }
+                                }
+
+                                Surface(shape = RoundedCornerShape(4.dp), color = Color(0xFF064E3B)) {
+                                    Text("CONNECTED", fontSize = 9.sp, fontWeight = FontWeight.Bold, color = Color(0xFF34D399), modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp))
+                                }
+                            }
+
+                            Text(
+                                text = "Category folders mapped to your account. Files uploaded to these folders on Google Drive can be synced directly into the app and shared with the webapp:",
+                                fontSize = 11.sp,
+                                color = Color(0xFF94A3B8),
+                                lineHeight = 15.sp
+                            )
+
+                            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                driveCategoryFolders.forEach { folder ->
+                                    Surface(
+                                        shape = RoundedCornerShape(10.dp),
+                                        color = Color(0xFF0B1624),
+                                        border = BorderStroke(1.dp, Color(0xFF1E293B)),
+                                        modifier = Modifier.fillMaxWidth()
+                                    ) {
+                                        Column(modifier = Modifier.padding(10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                                            Row(
+                                                modifier = Modifier.fillMaxWidth(),
+                                                horizontalArrangement = Arrangement.SpaceBetween,
+                                                verticalAlignment = Alignment.CenterVertically
+                                            ) {
+                                                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                                    Surface(
+                                                        shape = RoundedCornerShape(6.dp),
+                                                        color = Color(0xFF1E293B)
+                                                    ) {
+                                                        Text(
+                                                            text = folder.icon,
+                                                            fontSize = 14.sp,
+                                                            modifier = Modifier.padding(horizontal = 6.dp, vertical = 3.dp)
+                                                        )
+                                                    }
+                                                    Column {
+                                                        Text(
+                                                            text = folder.name,
+                                                            fontWeight = FontWeight.Bold,
+                                                            fontSize = 12.sp,
+                                                            color = Color.White
+                                                        )
+                                                        Text(
+                                                            text = folder.path,
+                                                            fontSize = 10.sp,
+                                                            fontFamily = FontFamily.Monospace,
+                                                            color = Color(0xFF38BDF8)
+                                                        )
+                                                    }
+                                                }
+
+                                                Surface(
+                                                    shape = RoundedCornerShape(4.dp),
+                                                    color = Color(0xFF0F2E3A)
+                                                ) {
+                                                    Text(
+                                                        text = "${folder.fileCount} items",
+                                                        fontSize = 10.sp,
+                                                        fontWeight = FontWeight.Bold,
+                                                        color = Color(0xFF38BDF8),
+                                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                                    )
+                                                }
+                                            }
+
+                                            Text(
+                                                text = folder.description,
+                                                fontSize = 10.sp,
+                                                color = Color(0xFF94A3B8),
+                                                lineHeight = 14.sp
+                                            )
+
+                                            Row(
+                                                modifier = Modifier.fillMaxWidth(),
+                                                horizontalArrangement = Arrangement.spacedBy(6.dp)
+                                            ) {
+                                                OutlinedButton(
+                                                    onClick = { onOpenDriveFolder(folder.driveWebUrl) },
+                                                    shape = RoundedCornerShape(6.dp),
+                                                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 2.dp),
+                                                    modifier = Modifier.weight(1f).height(30.dp)
+                                                ) {
+                                                    Icon(Icons.Default.OpenInBrowser, contentDescription = null, modifier = Modifier.size(12.dp), tint = Color.White)
+                                                    Spacer(modifier = Modifier.width(4.dp))
+                                                    Text("Open Folder", fontSize = 10.sp, color = Color.White)
+                                                }
+
+                                                Button(
+                                                    onClick = { onSyncDriveFolder(folder) },
+                                                    shape = RoundedCornerShape(6.dp),
+                                                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF059669)),
+                                                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 2.dp),
+                                                    modifier = Modifier.weight(1f).height(30.dp)
+                                                ) {
+                                                    Icon(Icons.Default.CloudDownload, contentDescription = null, modifier = Modifier.size(12.dp))
+                                                    Spacer(modifier = Modifier.width(4.dp))
+                                                    Text("Sync & Import", fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
