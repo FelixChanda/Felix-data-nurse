@@ -1,0 +1,182 @@
+[
+  {
+    "id": "topic-zm-malaria-01",
+    "title": "Severe & Complicated Malaria Management in Zambia",
+    "region": "Zambia",
+    "institutionOrGuideline": "National Malaria Elimination Centre (NMEC) / MoH Zambia Guidelines",
+    "category": "National Health Priority",
+    "level": "Clinical Licensure (GNCZ/NMCZ)",
+    "summary": "Clinical diagnosis and emergency management of severe Plasmodium falciparum malaria with cerebral manifestations, severe anemia, acute kidney injury, or lactic acidosis in adults and children under 5.",
+    "keyPearls": [
+      "First-line emergency drug: Intravenous/Intramuscular Artesunate (2.4 mg/kg for adults, 3.0 mg/kg for children <20kg) given at 0, 12, and 24 hours.",
+      "Always check Blood Glucose immediately: Severe malaria causes refractory hypoglycemia, especially in pregnant women and toddlers.",
+      "Never fluid-overload cerebral malaria patients: Maintain euvolemia to prevent fatal cerebral edema and pulmonary edema."
+    ],
+    "priorityInterventions": [
+      "1. Rapid Triage: Assess airway, breathing, consciousness level (Blantyre/Glasgow coma scale), and blood glucose.",
+      "2. Obtain urgent RDT & thick/thin blood smear, hemoglobin, and electrolytes.",
+      "3. Reconstitute Artesunate powder with 5% sodium bicarbonate then dilute with 0.9% Normal Saline and administer immediately.",
+      "4. Monitor hourly urine output (<0.5 ml/kg/hr indicates Acute Kidney Injury) and neuro checks."
+    ],
+    "examFocus": "Artesunate reconstitution steps, calculation of pediatric dosage (<20kg = 3.0mg/kg), and differential diagnosis of cerebral malaria vs bacterial meningitis.",
+    "recentUpdates": "Updated Zambian National Guidelines emphasize immediate parenteral Artesunate over Quinine infusion due to lower hypoglycemia and cardiac mortality risks.",
+    "sourceAuthority": "NMEC Zambia & GNCZ Exam Board",
+    "tags": [
+      "Malaria",
+      "Artesunate",
+      "Infectious Disease",
+      "Zambia Priority",
+      "Pediatric Emergency"
+    ]
+  },
+  {
+    "id": "topic-zm-cholera-02",
+    "title": "Cholera Outbreak Emergency Response & CTC Triage Protocol",
+    "region": "Zambia",
+    "institutionOrGuideline": "Zambia National Public Health Institute (ZNPHI) / WHO",
+    "category": "Public Health & Epidemiology",
+    "level": "Clinical Licensure (GNCZ/NMCZ)",
+    "summary": "Standardized nursing workflow inside Cholera Treatment Centers (CTCs): triage classification (Plan A, B, C for dehydration), rapid Ringers Lactate bolus protocols, cholera cot nursing, and infection prevention.",
+    "keyPearls": [
+      "Plan C (Severe Dehydration): Administer 100 ml/kg of IV Ringers Lactate rapidly (30 ml/kg in first 30 mins for adults, then 70 ml/kg over 2.5 hours).",
+      "Oral Rehydration Solution (ORS) must be given concurrently as soon as patient can swallow safely.",
+      "Strict disinfection: 0.5% Chlorine solution for vomitus/stool spills and body bag preparation; 0.05% Chlorine solution for handwashing."
+    ],
+    "priorityInterventions": [
+      "1. Triage by skin turgor, radial pulse, thirst, and mental status into Plan A, B, or C.",
+      "2. Secure two large-bore IV cannulas (16G or 18G) immediately for Plan C patients.",
+      "3. Position patient on specialized Cholera Cot with calibrated bucket to measure liquid stool losses hourly.",
+      "4. Administer single-dose oral Doxycycline 300mg (or Azithromycin for pregnant/pediatric) after vomiting subsides."
+    ],
+    "examFocus": "Plan C IV fluid calculation for adults vs infants, ORS preparation formula, and chlorine dilution math for infection control.",
+    "recentUpdates": "Incorporation of Oral Cholera Vaccine (OCV - Euvichol-Plus) mass campaigns and zinc supplementation (20mg daily x 14 days) in all pediatric cholera cases.",
+    "sourceAuthority": "ZNPHI & MoH Zambia",
+    "tags": [
+      "Cholera",
+      "Fluid Resuscitation",
+      "Infection Control",
+      "ZNPHI",
+      "Dehydration"
+    ]
+  },
+  {
+    "id": "topic-zm-emonc-03",
+    "title": "Emergency Obstetric & Neonatal Care (EmONC) — Postpartum Hemorrhage",
+    "region": "Both",
+    "institutionOrGuideline": "WHO / NMCZ National Midwifery Standards",
+    "category": "Maternal & Neonatal",
+    "level": "Clinical Licensure (GNCZ/NMCZ)",
+    "summary": "Management of primary Postpartum Hemorrhage (PPH) due to the 4 Ts (Tone, Tissue, Trauma, Thrombin). Rapid deployment of the PPH emergency bundle: uterotonics, uterine massage, bimanual compression, and balloon tamponade.",
+    "keyPearls": [
+      "Uterine Atony is responsible for 80% of PPH cases: Immediately perform vigorous fundal massage until uterus is contracted like a cricket ball.",
+      "First-line pharmacotherapy: Oxytocin 10-20 IU in 500ml Normal Saline at 60 drops/min, followed by Ergometrine 0.5mg IM (contraindicated in hypertension/preeclampsia) or Misoprostol 800mcg rectally.",
+      "Non-pneumatic Anti-Shock Garment (NASG) application while preparing for surgical intervention or blood transfusion."
+    ],
+    "priorityInterventions": [
+      "1. Call for help (\"Code PPH\") and massage uterine fundus continuously.",
+      "2. Catheterize urinary bladder with Foley catheter to relieve bladder distension.",
+      "3. Establish two large-bore IV lines (16G) and infuse crystalloids while crossmatching 2-4 units whole blood.",
+      "4. Perform internal bimanual uterine compression if bleeding continues."
+    ],
+    "examFocus": "4 Ts etiology, contraindications to Ergometrine (hypertension), and steps of Active Management of the Third Stage of Labor (AMTSL).",
+    "recentUpdates": "WHO 2024/2025 updated guidelines mandate use of calibrated under-buttocks drapes to accurately measure blood loss instead of visual estimation.",
+    "sourceAuthority": "NMCZ Midwifery Board & WHO",
+    "tags": [
+      "PPH",
+      "EmONC",
+      "Midwifery",
+      "Obstetric Emergency",
+      "Oxytocin"
+    ]
+  },
+  {
+    "id": "topic-gl-sepsis-04",
+    "title": "Surviving Sepsis Campaign: 1-Hour Sepsis Bundle",
+    "region": "Global",
+    "institutionOrGuideline": "Surviving Sepsis Campaign / International Consensus Guidelines",
+    "category": "Critical Care & Emergency",
+    "level": "Global Standard (WHO)",
+    "summary": "Rapid identification of sepsis and septic shock using qSOFA / SOFA scores. Execution of the critical 1-Hour Sepsis Resuscitation Bundle to cut mortality rates.",
+    "keyPearls": [
+      "Measure serum lactate immediately: Lactate > 2 mmol/L indicates tissue hypoperfusion; Lactate > 4 mmol/L indicates severe metabolic crisis.",
+      "Obtain blood cultures BEFORE administering broad-spectrum antibiotics (do not delay antibiotics > 45 mins if culture is delayed).",
+      "Administer 30 mL/kg of IV crystalloid (Balanced crystalloid/Ringers) within 3 hours for hypotension or lactate ≥ 4 mmol/L."
+    ],
+    "priorityInterventions": [
+      "1. Recognize signs: Temperature >38.3°C or <36°C, HR >90, RR >20, altered mental status, MAP <65 mmHg.",
+      "2. Draw 2 sets of peripheral blood cultures (aerobic + anaerobic).",
+      "3. Start IV broad-spectrum empiric antibiotics within 60 minutes of presentation.",
+      "4. Start Norepinephrine (first-choice vasopressor) if MAP remains < 65 mmHg despite adequate fluid challenge."
+    ],
+    "examFocus": "Target Mean Arterial Pressure (MAP ≥ 65 mmHg), calculation of MAP ( [2 x DBP + SBP] / 3 ), and priority order of sepsis bundle actions.",
+    "recentUpdates": "Prefer balanced crystalloids (Plasma-Lyte / Ringers) over 0.9% Saline to prevent hyperchloremic metabolic acidosis and acute kidney injury.",
+    "sourceAuthority": "Surviving Sepsis Campaign & WHO",
+    "tags": [
+      "Sepsis",
+      "Critical Care",
+      "Emergency",
+      "Hemodynamics",
+      "Infection"
+    ]
+  },
+  {
+    "id": "topic-zm-hiv-tb-05",
+    "title": "Zambian Consolidated HIV ART & TB-DOTS Co-Infection Protocol",
+    "region": "Zambia",
+    "institutionOrGuideline": "Ministry of Health Zambia National HIV/AIDS Guidelines",
+    "category": "National Health Priority",
+    "level": "Clinical Licensure (GNCZ/NMCZ)",
+    "summary": "Comprehensive management of People Living with HIV (PLHIV) and TB co-infection. Covers Dolutegravir (DTG)-based First-Line regimens (TLD: Tenofovir + Lamivudine + Dolutegravir), Viral Load monitoring, and TPT (TB Preventive Treatment with 3HP/6H).",
+    "keyPearls": [
+      "First-Line adult regimen in Zambia: TLD (Tenofovir 300mg + Lamivudine 300mg + Dolutegravir 50mg) taken once daily with or without food.",
+      "If patient is co-infected with active TB and taking Rifampicin: Double the Dolutegravir dose (DTG 50mg BID) due to CYP3A4 enzyme induction by Rifampicin.",
+      "Undetectable = Untransmittable (U=U): Viral load <50 copies/ml eliminates sexual transmission of HIV."
+    ],
+    "priorityInterventions": [
+      "1. Perform 4-symptom TB screening at every clinical encounter (Cough, Fever, Night Sweats, Weight Loss).",
+      "2. Test for Cryptococcal Antigen (CrAg) in all clients with CD4 < 200 cells/uL prior to ART initiation.",
+      "3. Counsel patient on adherence barriers, pill burden, and viral load milestone schedule (6 months, 12 months, annually).",
+      "4. Screen for renal function (Serum Creatinine/eGFR) prior to and during Tenofovir (TDF) therapy."
+    ],
+    "examFocus": "TLD components and dosing, management of drug interactions between Rifampicin and DTG, and Immune Reconstitution Inflammatory Syndrome (IRIS).",
+    "recentUpdates": "Adoption of 3HP (once-weekly Isoniazid + Rifapentine for 3 months) as preferred short-course TB preventive treatment across Zambian ART clinics.",
+    "sourceAuthority": "MoH Zambia & GNCZ",
+    "tags": [
+      "HIV",
+      "Tuberculosis",
+      "ART",
+      "Dolutegravir",
+      "Zambia Guidelines"
+    ]
+  },
+  {
+    "id": "topic-gl-pediatric-06",
+    "title": "Pediatric Advanced Life Support & IMCI Emergency Triage (ETAT)",
+    "region": "Both",
+    "institutionOrGuideline": "WHO Emergency Triage Assessment & Treatment / GNCZ Pediatrics",
+    "category": "Pediatrics & IMCI",
+    "level": "Undergraduate Diploma/BSc",
+    "summary": "Emergency Triage, Assessment, and Treatment (ETAT) protocol for children under 5 presenting to health facilities. Rapid categorization into Emergency Signs, Priority Signs, and Non-urgent queue.",
+    "keyPearls": [
+      "Emergency Signs (ABCD): Airway/Breathing (stridor, central cyanosis, severe respiratory distress), Circulation (weak/fast pulse, cap refill >3s, cold hands), Coma/Convulsion, Dehydration (severe lethargy).",
+      "Intraosseous (IO) access must be established within 90 seconds if peripheral IV access cannot be secured in a decompensating child.",
+      "Pediatric Bolus Fluid standard: 10-20 mL/kg of Normal Saline or Ringers over 10-20 minutes (except in Severe Acute Malnutrition where fluid is restricted)."
+    ],
+    "priorityInterventions": [
+      "1. Immediate triage at clinic gate: look for chest indrawing, stridor at rest, and lethargy.",
+      "2. Deliver high-flow oxygen via nasal prongs at 1-2 L/min for hypoxemia (SpO2 < 90%).",
+      "3. Check rapid blood glucose (Dextrose stick) for any convulsing or unconscious child; treat with 5 mL/kg 10% Dextrose IV bolus.",
+      "4. Position unconscious child in recovery position to prevent aspiration."
+    ],
+    "examFocus": "ETAT triage prioritization, pediatric drug calculations based on weight, and differentiating SAM (Severe Acute Malnutrition) fluid rules vs normal shock.",
+    "recentUpdates": "Emphasis on early Bubble CPAP in secondary Zambian district hospitals for neonatal and infant severe bronchiolitis/pneumonia.",
+    "sourceAuthority": "WHO & Paediatric Association of Zambia",
+    "tags": [
+      "ETAT",
+      "IMCI",
+      "Pediatrics",
+      "Resuscitation",
+      "Oxygen Therapy"
+    ]
+  }
+]

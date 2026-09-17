@@ -1,0 +1,1227 @@
+[
+  {
+    "id": "mod-101",
+    "title": "Fundamentals of Nursing & Health Assessment",
+    "category": "modules",
+    "domain": "Fundamentals & Assessment",
+    "yearLevel": "Year 1 (Foundations)",
+    "moduleCode": "NUR-101",
+    "credits": 6,
+    "semester": "Year 1, Semester 1",
+    "clinicalPlacementHours": 90,
+    "authorOrInstitution": "Department of Nursing Education & Clinical Skills",
+    "updatedAt": "2024-08-15",
+    "description": "Core foundational principles of professional nursing practice, patient safety, infection control, comprehensive head-to-toe health assessment, and documentation standards.",
+    "tags": [
+      "Foundations",
+      "Vital Signs",
+      "Health Assessment",
+      "Infection Control",
+      "Nursing Process"
+    ],
+    "isFeatured": true,
+    "learningOutcomes": [
+      "Master the five phases of the nursing process (ADPIE: Assessment, Diagnosis, Planning, Implementation, Evaluation).",
+      "Accurately perform and document a full head-to-toe physiological health assessment.",
+      "Demonstrate strict aseptic technique, hand hygiene protocols, and standard vs. transmission-based precautions.",
+      "Measure, interpret, and escalate deviations in vital signs (BP, HR, RR, SpO2, Temp, Pain scale)."
+    ],
+    "syllabus": [
+      {
+        "unitNumber": 1,
+        "title": "Professional Identity & The Nursing Process (ADPIE)",
+        "durationWeeks": 3,
+        "topics": [
+          "History of Nursing",
+          "Scope of Practice",
+          "ADPIE Framework",
+          "Clinical Documentation (SOAP / DAR)",
+          "Therapeutic Communication"
+        ],
+        "keyCompetencies": [
+          "Formulate NANDA-I nursing diagnoses",
+          "Distinguish subjective from objective data"
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "title": "Infection Control, Asepsis & Patient Safety",
+        "durationWeeks": 3,
+        "topics": [
+          "Chain of Infection",
+          "Hand Hygiene Protocols",
+          "Sterile Gloving & Field",
+          "Fall Risk Prevention (Morse Scale)",
+          "Pressure Injury Staging (Braden Scale)"
+        ],
+        "keyCompetencies": [
+          "Don and doff full PPE without contamination",
+          "Perform Braden Pressure Injury Risk assessment"
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "title": "Comprehensive Physical Assessment (Head-to-Toe)",
+        "durationWeeks": 5,
+        "topics": [
+          "Inspection, Palpation, Percussion, Auscultation",
+          "Neurological & Cranial Nerves",
+          "Cardiovascular & Respiratory Assessment",
+          "Abdominal & Genitourinary Examination"
+        ],
+        "keyCompetencies": [
+          "Auscultate normal vs adventitious lung sounds",
+          "Perform peripheral vascular and pulse grading"
+        ]
+      },
+      {
+        "unitNumber": 4,
+        "title": "Basic Clinical Interventions & Medication Routes",
+        "durationWeeks": 4,
+        "topics": [
+          "Enteral vs Parenteral Administration",
+          "Subcutaneous & Intramuscular Injections (Z-track)",
+          "Wound Care & Dressing Changes",
+          "Urinary Catheterization Principles"
+        ],
+        "keyCompetencies": [
+          "Locate ventrogluteal injection landmark",
+          "Aseptic urinary catheter insertion protocol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mod-204",
+    "title": "Pharmacology in Clinical Nursing Practice",
+    "category": "modules",
+    "domain": "Pharmacology",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "moduleCode": "NUR-204",
+    "credits": 5,
+    "semester": "Year 2, Semester 1",
+    "clinicalPlacementHours": 45,
+    "authorOrInstitution": "Clinical Pharmacology & Therapeutics Faculty",
+    "updatedAt": "2024-09-02",
+    "description": "Comprehensive study of pharmacodynamics, pharmacokinetics, high-alert medications, controlled substances, dosage calculations, and safe medication administration rights.",
+    "tags": [
+      "Pharmacology",
+      "Dosage Calculations",
+      "High-Alert Drugs",
+      "Antidotes",
+      "Safety"
+    ],
+    "isFeatured": true,
+    "learningOutcomes": [
+      "Apply the 10 Rights of Medication Administration and prevent medication reconciliation errors.",
+      "Execute error-free pediatric, adult, and weight-based dosage and intravenous drip calculations.",
+      "Identify indications, adverse effects, contraindications, and nursing considerations for major drug classes.",
+      "Recognize toxicities and immediately administer corresponding antidotes."
+    ],
+    "syllabus": [
+      {
+        "unitNumber": 1,
+        "title": "Principles of Pharmacokinetics & Pharmacodynamics",
+        "durationWeeks": 3,
+        "topics": [
+          "Absorption, Distribution, Metabolism (CYP450), Elimination",
+          "Therapeutic Index & Peak/Trough Levels",
+          "First-Pass Effect",
+          "Teratogenic Categories"
+        ],
+        "keyCompetencies": [
+          "Calculate half-life and steady state",
+          "Monitor vancomycin trough timing"
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "title": "Autonomic & Cardiovascular Pharmacotherapy",
+        "durationWeeks": 4,
+        "topics": [
+          "Antihypertensives (ACEi, ARBs, Beta Blockers, CCBs)",
+          "Diuretics (Loop, Thiazide, K-Sparing)",
+          "Cardiac Glycosides (Digoxin)",
+          "Anticoagulants & Reversal Agents (Heparin, Warfarin, DOACs)"
+        ],
+        "keyCompetencies": [
+          "Assess apical pulse before Digoxin administration",
+          "Monitor aPTT / PT / INR targets"
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "title": "Antimicrobial, Antiviral & Pain Management",
+        "durationWeeks": 4,
+        "topics": [
+          "Beta-lactams & Vancomycin (Red Man Syndrome)",
+          "Aminoglycosides & Ototoxicity",
+          "Opioids (Morphine, Fentanyl) & Naloxone titration",
+          "NSAIDs and Renal Risk"
+        ],
+        "keyCompetencies": [
+          "Manage opioid-induced respiratory depression",
+          "Obtain blood cultures before broad-spectrum antibiotic start"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mod-210",
+    "title": "Adult Health & Medical-Surgical Nursing I & II",
+    "category": "modules",
+    "domain": "Adult Health & Med-Surg",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "moduleCode": "NUR-210",
+    "credits": 8,
+    "semester": "Year 2, Semester 2",
+    "clinicalPlacementHours": 180,
+    "authorOrInstitution": "Acute Care & Medical-Surgical Nursing Division",
+    "updatedAt": "2024-07-20",
+    "description": "Pathophysiologic mechanisms, clinical manifestations, multidisciplinary management, and evidence-based nursing interventions for acute and chronic adult illnesses.",
+    "tags": [
+      "Med-Surg",
+      "Fluid & Electrolytes",
+      "Cardiovascular",
+      "Respiratory",
+      "Post-Op Care"
+    ],
+    "isFeatured": true,
+    "learningOutcomes": [
+      "Prioritize nursing care for patients experiencing acute coronary syndrome, stroke, and respiratory compromise.",
+      "Interpret arterial blood gases (ABGs) and fluid/electrolyte imbalances with prompt intervention.",
+      "Execute perioperative nursing care including informed consent verification, timeout, and PACU recovery.",
+      "Formulate comprehensive post-discharge self-care education for chronic illness management."
+    ],
+    "syllabus": [
+      {
+        "unitNumber": 1,
+        "title": "Fluid, Electrolyte & Acid-Base Balances",
+        "durationWeeks": 3,
+        "topics": [
+          "Isotonic, Hypotonic, Hypertonic Fluids",
+          "Hypo/Hyperkalemia and ECG findings",
+          "Hypo/Hypernatremia",
+          "ROME ABG Analysis (Compensated vs Uncompensated)"
+        ],
+        "keyCompetencies": [
+          "Interpret 12-lead ECG changes in hyperkalemia (peaked T waves)",
+          "Manage IV replacement rates safely"
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "title": "Cardiovascular & Peripheral Vascular Alterations",
+        "durationWeeks": 4,
+        "topics": [
+          "Coronary Artery Disease & Acute Coronary Syndrome",
+          "Heart Failure (Left vs Right)",
+          "Hypertensive Crises",
+          "Deep Vein Thrombosis & Pulmonary Embolism"
+        ],
+        "keyCompetencies": [
+          "Execute MONA / MONA-B protocol for suspected MI",
+          "Differentiate signs of left vs right heart failure"
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "title": "Respiratory & Gas Exchange Alterations",
+        "durationWeeks": 4,
+        "topics": [
+          "COPD (Emphysema & Chronic Bronchitis)",
+          "Pneumonia & Sepsis Pathway",
+          "Chest Tube Drainage Systems (3 Chambers)",
+          "Acute Respiratory Distress Syndrome (ARDS)"
+        ],
+        "keyCompetencies": [
+          "Troubleshoot bubbling in water seal chamber of chest drain",
+          "Manage hypoxic drive considerations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mod-305",
+    "title": "Maternal, Neonatal & Women’s Reproductive Health",
+    "category": "modules",
+    "domain": "Maternal & Neonatal",
+    "yearLevel": "Year 3 (Specialties & Peds)",
+    "moduleCode": "NUR-305",
+    "credits": 6,
+    "semester": "Year 3, Semester 1",
+    "clinicalPlacementHours": 120,
+    "authorOrInstitution": "Maternal-Child Health Clinical Department",
+    "updatedAt": "2024-06-12",
+    "description": "Specialized nursing care across antepartum, intrapartum, postpartum periods, high-risk obstetrics, and essential newborn care including APGAR scoring and resuscitation.",
+    "tags": [
+      "Obstetrics",
+      "Labor & Delivery",
+      "Postpartum",
+      "APGAR",
+      "Newborn Care"
+    ],
+    "isFeatured": false,
+    "learningOutcomes": [
+      "Assess fetal heart rate monitoring strips (VEAL CHOP mnemonic) and manage decelerations.",
+      "Identify and manage obstetric emergencies including postpartum hemorrhage and umbilical cord prolapse.",
+      "Conduct 1-minute and 5-minute APGAR score evaluations for neonates.",
+      "Provide comprehensive lactation support and education on maternal physiological adaptations."
+    ],
+    "syllabus": [
+      {
+        "unitNumber": 1,
+        "title": "Antepartum Care & Fetal Surveillance",
+        "durationWeeks": 3,
+        "topics": [
+          "Presumptive, Probable, Positive Pregnancy Signs",
+          "Naegele’s Rule for EDD",
+          "Non-Stress Test (NST) & Biophysical Profile (BPP)",
+          "Gestational Diabetes & Preeclampsia"
+        ],
+        "keyCompetencies": [
+          "Calculate estimated due date using Naegele’s formula",
+          "Assess deep tendon reflexes and clonus in preeclampsia"
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "title": "Intrapartum Management & Labor Complications",
+        "durationWeeks": 4,
+        "topics": [
+          "Four Stages of Labor",
+          "Fetal Monitoring (Variable, Early, Late Decelerations)",
+          "Postpartum Hemorrhage (4 Ts: Tone, Tissue, Trauma, Thrombin)",
+          "Cord Prolapse Management"
+        ],
+        "keyCompetencies": [
+          "Interpret electronic fetal monitoring tracings",
+          "Execute knee-to-chest positioning for cord prolapse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mod-401",
+    "title": "Critical Care, Emergency & Trauma Nursing",
+    "category": "modules",
+    "domain": "Critical Care & Emergency",
+    "yearLevel": "Year 4 (Leadership & Intensive)",
+    "moduleCode": "NUR-401",
+    "credits": 7,
+    "semester": "Year 4, Semester 1",
+    "clinicalPlacementHours": 150,
+    "authorOrInstitution": "Intensive Care & Emergency Medicine Nursing Board",
+    "updatedAt": "2024-09-10",
+    "description": "Advanced physiological monitoring, invasive lines, mechanical ventilation modes, hemodynamic stabilization, shock states, and triage in trauma resuscitations.",
+    "tags": [
+      "ICU",
+      "Emergency",
+      "Ventilators",
+      "Hemodynamics",
+      "Shock",
+      "Trauma"
+    ],
+    "isFeatured": true,
+    "learningOutcomes": [
+      "Manage patients with arterial lines, central venous catheters, and understand CVP/MAP goals.",
+      "Differentiate and treat hypovolemic, cardiogenic, septic, and anaphylactic shock states.",
+      "Troubleshoot high and low pressure alarms on mechanical ventilators.",
+      "Apply primary and secondary survey frameworks (ABCDE) during trauma arrivals."
+    ]
+  },
+  {
+    "id": "mod-imci-01",
+    "title": "Integrated Management of Childhood Illness (IMCI): Module 1 - Introduction",
+    "category": "modules",
+    "domain": "Pediatric Nursing",
+    "yearLevel": "Year 3 (Specialties & Peds)",
+    "moduleCode": "IMCI-MOD1",
+    "credits": 5,
+    "semester": "Year 3, Semester 1",
+    "clinicalPlacementHours": 80,
+    "authorOrInstitution": "Ministry of Health Zambia / WHO / UNICEF",
+    "updatedAt": "2024-09-12",
+    "description": "Official Zambian Ministry of Health Abridged Course (2016 Edition) for health workers on Integrated Management of Childhood Illness (IMCI). Covers case management processes for pneumonia, diarrhoea, malaria, measles, malnutrition, and HIV in children under 5.",
+    "tags": [
+      "IMCI Zambia",
+      "Pediatric Care",
+      "Ministry of Health",
+      "Childhood Illness",
+      "WHO Guidelines",
+      "Case Management"
+    ],
+    "isFeatured": true,
+    "versionRelease": "v2016.1 (MoH Zambia)",
+    "patchNotes": [
+      "[Auto-Categorized] Sorted into MODULES category under Pediatric Nursing.",
+      "[Syllabus Audit] Official Zambia Ministry of Health / WHO / UNICEF 2016 Abridged Course Edition.",
+      "[AI Flashcard Indexing] High-yield pediatric triage & case management charts indexed."
+    ],
+    "learningOutcomes": [
+      "Master the 6-step IMCI case management process: Assess, Classify, Identify Treatment, Treat, Counsel Caretaker, and Follow-up.",
+      "Differentiate age-based chart protocols (< 2 months young infants vs 2 months to 5 years).",
+      "Address the major causes of under-5 mortality in Zambia: Pneumonia, Diarrhoea, Malaria, Measles, Malnutrition, and HIV/AIDS.",
+      "Apply integrated multi-symptom assessment to prevent overlooked co-morbidities."
+    ],
+    "syllabus": [
+      {
+        "unitNumber": 1,
+        "title": "Introduction & The Case Management Process",
+        "durationWeeks": 2,
+        "topics": [
+          "Under-5 Mortality Causes in Zambia",
+          "Disease-Specific vs Integrated Guidelines",
+          "The 6 Core Steps of IMCI",
+          "Clinical & Technical Sessions Overview"
+        ],
+        "keyCompetencies": [
+          "Identify signs requiring urgent hospital referral",
+          "Execute the 6-step IMCI case management process"
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "title": "Selecting Case Management Charts",
+        "durationWeeks": 2,
+        "topics": [
+          "Age Group Stratification (< 2 months vs 2 months to 5 years)",
+          "Chart Selection Workflow",
+          "General Danger Signs Check"
+        ],
+        "keyCompetencies": [
+          "Accurately select young infant vs sick child assessment chart",
+          "Detect general danger signs"
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "title": "Glossary of Clinical Terms & Medicines List",
+        "durationWeeks": 2,
+        "topics": [
+          "Chest In-drawing & Stridor",
+          "Kwashiorkor & Severe Acute Malnutrition",
+          "Opportunistic Infections in HIV",
+          "Essential Pediatric Medicines (ORS, Artemether-Lumefantrine, Amoxycillin, Zinc, Quinine)"
+        ],
+        "keyCompetencies": [
+          "Calculate pediatric drug dosages from IMCI formulary",
+          "Recognize malnutrition and HIV signs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mod-imci-06",
+    "title": "Integrated Management of Childhood Illness (IMCI): Module 6 - Follow-Up Care",
+    "category": "modules",
+    "domain": "Pediatric Nursing",
+    "yearLevel": "Year 3 (Specialties & Peds)",
+    "moduleCode": "IMCI-MOD6",
+    "credits": 5,
+    "semester": "Year 3, Semester 1",
+    "clinicalPlacementHours": 80,
+    "authorOrInstitution": "Ministry of Health Zambia / WHO / UNICEF",
+    "updatedAt": "2024-09-12",
+    "description": "Official Zambian Ministry of Health IMCI Follow-Up Care booklet (Module 6). Detailed clinical guidelines for reassessing non-improving pneumonia, persistent diarrhoea, dysentery, malaria, ear infections, thrush, and HIV-exposed or HIV-positive infants.",
+    "tags": [
+      "IMCI Follow-Up",
+      "Reassessment",
+      "Pediatrics",
+      "Zambia MoH",
+      "Second-Line Antibiotics",
+      "HIV Exposed Infant"
+    ],
+    "isFeatured": true,
+    "versionRelease": "v2016.6 (MoH Zambia)",
+    "patchNotes": [
+      "[Auto-Categorized] Sorted into MODULES category under Pediatric Nursing.",
+      "[Syllabus Audit] Official Zambia Ministry of Health Follow-Up Care Protocol (Module 6).",
+      "[AI Flashcard Indexing] Reassessment algorithms & second-line drug switches indexed for clinical review."
+    ],
+    "learningOutcomes": [
+      "Conduct scheduled follow-up visits (2, 3, 5, 14, or 30 days) according to IMCI charts.",
+      "Recognize treatment failure in pneumonia, dysentery, and malaria, and switch appropriately to second-line antibiotics/antimalarials or refer urgently.",
+      "Provide monthly follow-up care and Cotrimoxazole prophylaxis for HIV-exposed and HIV-positive children.",
+      "Reassess sick young infants (< 2 months) for local bacterial infection, jaundice, diarrhoea, feeding problems, and thrush."
+    ],
+    "syllabus": [
+      {
+        "unitNumber": 1,
+        "title": "Follow-Up Principles & Reassessment Protocols",
+        "durationWeeks": 2,
+        "topics": [
+          "When to Return Schedules",
+          "Identifying New vs Persistent Problems",
+          "Reassessment vs Initial Visit Assessment"
+        ],
+        "keyCompetencies": [
+          "Determine if child requires full initial assessment or follow-up box reassessment",
+          "Evaluate treatment response"
+        ]
+      },
+      {
+        "unitNumber": 2,
+        "title": "Follow-Up for Respiratory & Gastrointestinal Conditions",
+        "durationWeeks": 3,
+        "topics": [
+          "Pneumonia Reassessment & Second-line Antibiotics",
+          "Persistent Diarrhoea & Dysentery Follow-Up",
+          "Second-line Shigella Antibiotic Protocol",
+          "Zinc & Multivitamin Continuation"
+        ],
+        "keyCompetencies": [
+          "Switch to second-line antibiotic for pneumonia/dysentery when indicated",
+          "Assess dehydration in persistent diarrhoea"
+        ]
+      },
+      {
+        "unitNumber": 3,
+        "title": "Follow-Up for Malaria, Measles & Ear Infections",
+        "durationWeeks": 3,
+        "topics": [
+          "Persisting Fever in Malaria & RDT/Microscopy Testing",
+          "Switch to Oral Quinine",
+          "Measles Eye/Mouth Complications",
+          "Acute vs Chronic Ear Infection Wicking & Ciprofloxacin Drops"
+        ],
+        "keyCompetencies": [
+          "Manage treatment-resistant malaria",
+          "Perform proper ear wicking and antibiotic drop instillation"
+        ]
+      },
+      {
+        "unitNumber": 4,
+        "title": "Follow-Up for HIV Infection & Young Infants (< 2 Months)",
+        "durationWeeks": 4,
+        "topics": [
+          "Cotrimoxazole PCP Prophylaxis Adherence",
+          "Monthly Follow-Up for HIV Positive Child",
+          "Young Infant Local Bacterial Infection & Jaundice",
+          "Infant Feeding Assessment & Attachment to Breast"
+        ],
+        "keyCompetencies": [
+          "Execute Cotrimoxazole prophylaxis protocol",
+          "Counsel HIV-positive mothers on safe infant feeding"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pp-2024-licensure",
+    "title": "2024 National Licensure Examination: Comprehensive Clinical Nursing (Paper 1 - Acute Care & Med-Surg)",
+    "category": "past_papers",
+    "domain": "Adult Health & Med-Surg",
+    "yearLevel": "Year 4 (Leadership & Intensive)",
+    "examYear": 2024,
+    "examPeriod": "National Licensure Prep",
+    "paperCode": "NLE-2024-MEDSURG-1",
+    "totalMarks": 100,
+    "durationMinutes": 120,
+    "fileSize": "2.4 MB",
+    "authorOrInstitution": "National Nursing Examination & Accreditation Council",
+    "updatedAt": "2024-11-10",
+    "description": "Complete high-yield clinical board examination covering patient prioritization, post-operative complications, cardiac arrhythmias, emergency drug titrations, and legal delegation.",
+    "tags": [
+      "Past Paper 2024",
+      "Board Prep",
+      "Licensure",
+      "Prioritization",
+      "Med-Surg",
+      "Detailed Solutions"
+    ],
+    "isFeatured": true,
+    "downloadCount": 1420,
+    "questions": [
+      {
+        "id": "q-1",
+        "number": 1,
+        "type": "multiple_choice",
+        "questionText": "A registered nurse receives handoff on four clients. Which client requires immediate assessment FIRST?",
+        "options": [
+          "A. A 58-year-old client with COPD with an oxygen saturation of 90% on 2 L/min nasal cannula.",
+          "B. A 64-year-old client 2 hours post-percutaneous coronary intervention (PCI) who reports a hard, warm bulge at the femoral insertion site.",
+          "C. A 42-year-old client with type 1 diabetes whose morning blood glucose is 186 mg/dL prior to breakfast.",
+          "D. A 75-year-old client with chronic osteoarthritis reporting pain rated 7/10 requesting scheduled PRN acetaminophen."
+        ],
+        "correctOptionIndex": 1,
+        "marks": 5,
+        "markingScheme": "Award 5 marks for Option B. Option B indicates an active femoral arterial hematoma or pseudoaneurysm post-cardiac catheterization, risking massive retroperitoneal hemorrhage and hypovolemic shock.",
+        "clinicalRationale": "Airway, Breathing, Circulation (ABC) and acute vs chronic stability guidelines dictate that an expanding femoral bulge indicates active arterial bleeding. 90% SpO2 is expected in chronic COPD. Mild hyperglycemia and chronic joint pain are stable non-emergent concerns.",
+        "highYieldTip": "Rule of Prioritization: Always prioritize acute circulatory collapse or hemorrhage over chronic disease baselines."
+      },
+      {
+        "id": "q-2",
+        "number": 2,
+        "type": "multiple_choice",
+        "questionText": "A client with heart failure is receiving intravenous furosemide 40 mg twice daily. The nurse notes new onset palpitations and muscle cramps. Which electrolyte imbalance and ECG alteration is most likely present?",
+        "options": [
+          "A. Hypercalcemia; shortened QT interval",
+          "B. Hypokalemia; prominent U waves and flattened T waves",
+          "C. Hyperkalemia; tall, peaked T waves and widened QRS",
+          "D. Hyponatremia; prolonged PR interval"
+        ],
+        "correctOptionIndex": 1,
+        "marks": 5,
+        "markingScheme": "Award 5 marks for Option B. Loop diuretics cause potassium wasting in the ascending limb of the loop of Henle, leading to hypokalemia, muscle cramping, ventricular irritability, and U waves.",
+        "clinicalRationale": "Furosemide is a potent loop diuretic that blocks Na-K-2Cl cotransporters. Serum potassium drops (< 3.5 mEq/L), manifesting with generalized muscle weakness, cramps, decreased bowel motility, flattened T waves, and distinctive U waves on ECG.",
+        "highYieldTip": "Remember: Hypokalemia = U waves and cramps; Hyperkalemia = Peaked T waves and widened QRS."
+      },
+      {
+        "id": "q-3",
+        "number": 3,
+        "type": "scenario_case",
+        "questionText": "Clinical Vignette: A 28-year-old client G1P0 at 38 weeks gestation is admitted to the labor unit. Fetal heart rate monitoring demonstrates repetitive late decelerations following uterine contractions. The maternal BP is 98/60 mmHg following epidural placement.\n\nOutline the four prioritized nursing actions (Intrauterine Resuscitation) the nurse must immediately institute.",
+        "marks": 10,
+        "markingScheme": "Award 2.5 marks for each valid immediate intervention (total 10):\n1. Reposition client onto left lateral side (relieves aortocaval compression and improves uteroplacental perfusion).\n2. Administer high-flow supplemental oxygen via non-rebreather mask at 10 L/min.\n3. Bolus intravenous fluids (isotonic crystalloids / Lactated Ringer’s) to correct maternal hypotension.\n4. Discontinue / turn off oxytocin (Pitocin) infusion immediately if infusing, and notify the obstetric provider.",
+        "clinicalRationale": "Late decelerations indicate uteroplacental insufficiency. Epidural sympathetic blockade frequently precipitates maternal hypotension, decreasing placental blood flow. Immediate left tilt, oxygen, fluid expansion, and cessation of uterotonics are standard critical care resuscitation protocols.",
+        "highYieldTip": "Mnemonic for Intrauterine Resuscitation: \"POISON\" = Position change, Oxytocin off, IV fluid bolus, Sterile vaginal exam, Oxygen on, Notify MD."
+      },
+      {
+        "id": "q-4",
+        "number": 4,
+        "type": "short_answer",
+        "questionText": "A physician orders a continuous intravenous infusion of regular insulin at 0.1 units/kg/hour for a client in Diabetic Ketoacidosis (DKA) weighing 70 kg. The pharmacy delivers a 250 mL normal saline bag containing 100 units of regular insulin.\n\nCalculate the required IV pump infusion rate in mL/hour.",
+        "marks": 5,
+        "markingScheme": "Award 5 marks for 17.5 mL/hr (or 18 mL/hr if rounding policy allows):\nStep 1: Desired dose = 70 kg * 0.1 units/kg/hr = 7 units/hr.\nStep 2: Concentration = 100 units / 250 mL = 0.4 units/mL.\nStep 3: Pump rate = 7 units/hr / 0.4 units/mL = 17.5 mL/hr.",
+        "clinicalRationale": "Accurate weight-based dose calculation is essential in DKA to avoid rapid hypoglycemia and cerebral edema.",
+        "highYieldTip": "Always double-check units/kg/hr vs total units/hr!"
+      }
+    ]
+  },
+  {
+    "id": "pp-2023-pharm",
+    "title": "2023 Midterm Assessment: Pharmacology & Safe Drug Calculations (Paper 2)",
+    "category": "past_papers",
+    "domain": "Pharmacology",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "examYear": 2023,
+    "examPeriod": "Midterm Examination",
+    "paperCode": "PHARM-2023-MID-2",
+    "totalMarks": 50,
+    "durationMinutes": 60,
+    "fileSize": "1.8 MB",
+    "authorOrInstitution": "School of Nursing & Midwifery Examination Board",
+    "updatedAt": "2023-10-18",
+    "description": "High-alert medication calculations, therapeutic serum levels, antidote associations, and autonomic receptor pharmacology past paper with complete worked answers.",
+    "tags": [
+      "Past Paper 2023",
+      "Pharmacology",
+      "Dosage Calculations",
+      "Heparin",
+      "Digoxin",
+      "Antidotes"
+    ],
+    "isFeatured": false,
+    "downloadCount": 980,
+    "questions": [
+      {
+        "id": "q-pharm-1",
+        "number": 1,
+        "type": "multiple_choice",
+        "questionText": "A client prescribed digoxin 0.25 mg daily reports visual changes describing halos around street lights, accompanied by nausea and fatigue. What is the immediate nursing priority?",
+        "options": [
+          "A. Administer the scheduled dose with an antacid to relieve nausea.",
+          "B. Hold the dose, evaluate apical pulse, and request serum digoxin and potassium levels.",
+          "C. Instruct the client to visit an ophthalmologist for corrective lenses.",
+          "D. Encourage increased dietary intake of potassium and recheck in 48 hours."
+        ],
+        "correctOptionIndex": 1,
+        "marks": 5,
+        "markingScheme": "Award 5 marks for Option B. Halos around lights, nausea, and bradycardia are classic cardinal symptoms of digitalis toxicity. Normal therapeutic range is 0.5 - 2.0 ng/mL. Hypokalemia increases susceptibility to toxicity.",
+        "clinicalRationale": "Holding the medication and assessing apical heart rate prevents fatal ventricular arrhythmias. Therapeutic serum blood levels and electrolytes must be confirmed.",
+        "highYieldTip": "Digoxin Antidote: Digoxin Immune Fab (Digibind)."
+      },
+      {
+        "id": "q-pharm-2",
+        "number": 2,
+        "type": "multiple_choice",
+        "questionText": "Which medication is the designated specific reversal agent for severe heparin-induced bleeding?",
+        "options": [
+          "A. Vitamin K (Phytonadione)",
+          "B. Protamine sulfate",
+          "C. Flumazenil",
+          "D. Deferoxamine"
+        ],
+        "correctOptionIndex": 1,
+        "marks": 5,
+        "markingScheme": "Award 5 marks for Option B. Protamine sulfate is a strongly basic protein that binds to strongly acidic heparin to form a stable, inactive salt complex.",
+        "clinicalRationale": "Protamine sulfate neutralizes unfractionated heparin within 5 minutes of intravenous delivery. Vitamin K is for warfarin reversal. Flumazenil reverses benzodiazepines.",
+        "highYieldTip": "Antidote Pairs: Heparin -> Protamine Sulfate; Warfarin -> Vitamin K."
+      }
+    ]
+  },
+  {
+    "id": "pp-2023-peds-mat",
+    "title": "2023 Semester Final: Maternal, Neonatal & Pediatric Nursing Practice (Paper 3)",
+    "category": "past_papers",
+    "domain": "Pediatric Nursing",
+    "yearLevel": "Year 3 (Specialties & Peds)",
+    "examYear": 2023,
+    "examPeriod": "Final Examination",
+    "paperCode": "MAT-PED-2023-F3",
+    "totalMarks": 75,
+    "durationMinutes": 90,
+    "fileSize": "3.1 MB",
+    "authorOrInstitution": "Faculty of Pediatric & Maternal Healthcare",
+    "updatedAt": "2023-12-05",
+    "description": "Pediatric dehydration assessment, congenital heart defects (cyanotic vs acyanotic), APGAR scoring scenarios, and pediatric medication safety.",
+    "tags": [
+      "Past Paper 2023",
+      "Pediatrics",
+      "APGAR",
+      "Tetralogy of Fallot",
+      "Dehydration"
+    ],
+    "isFeatured": false,
+    "downloadCount": 840,
+    "questions": [
+      {
+        "id": "q-ped-1",
+        "number": 1,
+        "type": "scenario_case",
+        "questionText": "A newborn infant is assessed at 1 minute of life: Heart rate is 110 bpm, respiratory effort is vigorous with lusty crying, active motion and flexion of extremities, prompt grimacing and coughing to suction catheter, and body is pink with mild cyanosis of the hands and feet (acrocyanosis).\n\nCalculate the 1-minute APGAR score and provide the breakdown for each of the 5 criteria.",
+        "marks": 10,
+        "markingScheme": "Award 10 marks total (2 marks per criteria):\n- Appearance (Color): 1 (pink body, blue extremities / acrocyanosis)\n- Pulse (Heart Rate): 2 (> 100 bpm)\n- Grimace (Reflex Irritability): 2 (vigorous cry/cough to suction)\n- Activity (Muscle Tone): 2 (active flexion and motion)\n- Respiration: 2 (strong, vigorous cry)\nTOTAL APGAR SCORE: 9 / 10. Indicates excellent neonatal transition.",
+        "clinicalRationale": "Acrocyanosis is physiological and normal in the first 24-48 hours of life, docking only 1 point under Appearance.",
+        "highYieldTip": "APGAR is scored at 1 and 5 minutes (and 10 mins if score < 7)."
+      }
+    ]
+  },
+  {
+    "id": "tb-fundamentals-potter",
+    "title": "Fundamentals of Nursing (10th Edition)",
+    "category": "textbooks",
+    "domain": "Fundamentals & Assessment",
+    "yearLevel": "Year 1 (Foundations)",
+    "authors": "Patricia A. Potter, Anne Griffin Perry, Patricia A. Stockert, Amy Hall",
+    "edition": "10th Edition (Clinical Reference)",
+    "publisher": "Elsevier Health Sciences",
+    "publicationYear": 2021,
+    "isbn": "978-0323677721",
+    "coverAccent": "from-teal-600 to-emerald-800",
+    "fileSize": "48.2 MB",
+    "authorOrInstitution": "Elsevier Publishing",
+    "updatedAt": "2024-01-15",
+    "description": "The definitive gold-standard nursing fundamentals textbook. Covers clinical judgment, infection control, the five-step nursing process, patient safety, documentation, and foundational clinical procedures.",
+    "tags": [
+      "Textbook",
+      "Fundamentals",
+      "Nursing Process",
+      "Clinical Judgment",
+      "Core Curriculum"
+    ],
+    "isFeatured": true,
+    "downloadCount": 3120,
+    "sampleExcerpt": "The nursing process is a critical thinking five-step framework that professional nurses use to apply the best available evidence to caregiving and promoting human health functions. Clinical judgment encompasses how nurses perceive clinical cues, interpret data, and respond appropriately.",
+    "tableOfContents": [
+      {
+        "chapterNumber": 1,
+        "title": "Nursing Today and Professional Identity",
+        "pageRange": "pp. 1-22",
+        "summary": "Historical foundations of nursing, Florence Nightingale reforms, contemporary practice competencies, and professional licensing standards.",
+        "keyPearls": [
+          "Benner’s Novice to Expert model",
+          "ANA Standards of Practice"
+        ]
+      },
+      {
+        "chapterNumber": 6,
+        "title": "Clinical Judgment in Nursing Practice",
+        "pageRange": "pp. 142-168",
+        "summary": "Developing critical reasoning, recognizing cognitive biases, and applying the NCSBN Clinical Judgment Measurement Model (NCJMM).",
+        "keyPearls": [
+          "Cues recognition",
+          "Hypothesis generation",
+          "Taking prioritized clinical action"
+        ]
+      },
+      {
+        "chapterNumber": 15,
+        "title": "Critical Thinking in Assessment & Health History",
+        "pageRange": "pp. 210-245",
+        "summary": "Comprehensive data collection methods, Gordon’s functional health patterns, and differentiating objective clinical data from subjective reports.",
+        "keyPearls": [
+          "Open-ended vs closed communication techniques",
+          "Validation of conflicting patient data"
+        ]
+      },
+      {
+        "chapterNumber": 29,
+        "title": "Infection Prevention and Control in Inpatient Settings",
+        "pageRange": "pp. 445-488",
+        "summary": "Epidemiology of hospital-acquired infections (HAIs), standard precautions, transmission tiers (airborne, droplet, contact), and sterile dressing technique.",
+        "keyPearls": [
+          "N95 respirator seal check for tuberculosis",
+          "Contact isolation requirements for C. difficile"
+        ]
+      },
+      {
+        "chapterNumber": 31,
+        "title": "Medication Administration Principles and Safety",
+        "pageRange": "pp. 560-618",
+        "summary": "Pharmacokinetics overview, ten rights of drug delivery, preventing \"look-alike sound-alike\" errors, and safe injection site landmarking.",
+        "keyPearls": [
+          "Ventrogluteal site prevents sciatic nerve damage",
+          "Z-track technique minimizes tissue staining and irritation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tb-medsurg-brunner",
+    "title": "Brunner & Suddarth’s Textbook of Medical-Surgical Nursing (15th Edition)",
+    "category": "textbooks",
+    "domain": "Adult Health & Med-Surg",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "authors": "Janice L. Hinkle, Kerry H. Cheever, Kristen J. Overbaugh",
+    "edition": "15th Edition (Two-Volume Set)",
+    "publisher": "Wolters Kluwer Health / Lippincott",
+    "publicationYear": 2022,
+    "isbn": "978-1975161033",
+    "coverAccent": "from-blue-700 to-indigo-900",
+    "fileSize": "65.4 MB",
+    "authorOrInstitution": "Wolters Kluwer Lippincott",
+    "updatedAt": "2024-02-18",
+    "description": "The universally acclaimed medical-surgical nursing reference. Delivers comprehensive physiologic breakdowns, pathophysiology flowcharts, pharmacological management, and prioritized nursing care plans.",
+    "tags": [
+      "Textbook",
+      "Med-Surg",
+      "Pathophysiology",
+      "Cardiology",
+      "Respiratory",
+      "Critical Care"
+    ],
+    "isFeatured": true,
+    "downloadCount": 2890,
+    "sampleExcerpt": "Medical-surgical nursing addresses adult healthcare needs across the continuum from wellness promotion to intensive disease intervention. Effective patient outcomes rely upon early cue recognition of deterioration, targeted physiological support, and patient education.",
+    "tableOfContents": [
+      {
+        "chapterNumber": 13,
+        "title": "Fluid and Electrolyte Balance: Physiological Imbalances",
+        "pageRange": "pp. 248-285",
+        "summary": "Detailed examination of osmolarity, hyper/hyponatremia, hyper/hypokalemia, acid-base regulation, and intravenous solution therapy.",
+        "keyPearls": [
+          "Potassium should NEVER be given IV push or bolus",
+          "Chvostek’s and Trousseau’s signs indicate hypocalcemia"
+        ]
+      },
+      {
+        "chapterNumber": 25,
+        "title": "Management of Patients With Acute Coronary Syndromes",
+        "pageRange": "pp. 710-758",
+        "summary": "Ischemia vs injury vs infarction ECG patterns, cardiac biomarker curves (Troponin I/T), pharmacologic reperfusion, and cardiac catheterization.",
+        "keyPearls": [
+          "Troponin elevates within 2-4 hours and persists up to 14 days",
+          "Bed rest and oxygenation minimize myocardial oxygen demand"
+        ]
+      },
+      {
+        "chapterNumber": 21,
+        "title": "Management of Patients With Respiratory Disorders",
+        "pageRange": "pp. 580-630",
+        "summary": "COPD exacerbations, pulmonary embolisms, ARDS pathology, and mechanical ventilation modes.",
+        "keyPearls": [
+          "Sudden dyspnea, tachycardia, and hemoptysis signal PE",
+          "Ventilator bundle reduces VAP rates"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tb-pharm-lilley",
+    "title": "Pharmacology and the Nursing Process (10th Edition)",
+    "category": "textbooks",
+    "domain": "Pharmacology",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "authors": "Linda Lane Lilley, Shelly Rainforth Collins, Julie S. Snyder",
+    "edition": "10th Edition",
+    "publisher": "Elsevier",
+    "publicationYear": 2023,
+    "isbn": "978-0323827973",
+    "coverAccent": "from-amber-600 to-orange-800",
+    "fileSize": "42.1 MB",
+    "authorOrInstitution": "Elsevier Health",
+    "updatedAt": "2024-03-01",
+    "description": "Drug classifications, mechanism of action, therapeutic effects, contraindications, adverse effects, and step-by-step nursing process applications for pharmacotherapy.",
+    "tags": [
+      "Textbook",
+      "Pharmacology",
+      "Drug Classes",
+      "Black Box Warnings",
+      "NCLEX Prep"
+    ],
+    "isFeatured": false,
+    "downloadCount": 1950,
+    "sampleExcerpt": "Safe medication administration requires the nurse to understand not only what drug is being delivered, but why that specific patient is receiving it, what parameters must be validated prior to administration, and what adverse reactions demand urgent intervention.",
+    "tableOfContents": [
+      {
+        "chapterNumber": 22,
+        "title": "Antihypertensive Drugs & Renin-Angiotensin System",
+        "pageRange": "pp. 340-372",
+        "summary": "Beta-1 selective vs non-selective blockers, ACE inhibitors (angioedema & dry cough), calcium channel blockers, and vasodilator emergencies.",
+        "keyPearls": [
+          "First-dose orthostatic hypotension precautions",
+          "Dry persistent cough occurs due to bradykinin accumulation with ACE inhibitors"
+        ]
+      },
+      {
+        "chapterNumber": 26,
+        "title": "Coagulation Modifier Drugs: Anticoagulants & Thrombolytics",
+        "pageRange": "pp. 415-442",
+        "summary": "Heparin-induced thrombocytopenia (HIT), warfarin dietary vitamin K restrictions, and novel direct oral anticoagulants (DOACs).",
+        "keyPearls": [
+          "Monitor platelet drop > 50% for suspected HIT",
+          "Warfarin takes 48-72 hours to achieve target INR 2.0-3.0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "note-lab-values",
+    "title": "High-Yield Clinical Lab Values & Critical Interpretation Cheat Sheet",
+    "category": "notes",
+    "domain": "Fundamentals & Assessment",
+    "yearLevel": "Year 1 (Foundations)",
+    "noteType": "Lab Values Reference",
+    "readTimeMinutes": 8,
+    "fileSize": "450 KB",
+    "hasAttachment": true,
+    "attachmentName": "Clinical_Lab_Values_Critical_Ranges_Pocket_Card.pdf",
+    "attachmentSize": "450 KB",
+    "attachmentType": "PDF",
+    "authorOrInstitution": "Critical Care Nursing Clinical Educators",
+    "updatedAt": "2024-10-01",
+    "description": "Essential reference sheet containing standard normal ranges, critical panic levels, clinical signs of derangement, and emergency nursing priorities for adult inpatients.",
+    "tags": [
+      "Lab Values",
+      "Electrolytes",
+      "ABGs",
+      "CBC",
+      "Coagulation",
+      "Cheat Sheet"
+    ],
+    "isFeatured": true,
+    "downloadCount": 4210,
+    "highYieldKeyPoints": [
+      "Potassium (3.5 - 5.0 mEq/L): Most critical cardiac electrolyte. Never infuse IV push.",
+      "Sodium (135 - 145 mEq/L): Neurological manifestations (seizure precautions in severe hyponatremia < 120).",
+      "Normal ABG Values: pH 7.35-7.45 | PaCO2 35-45 mmHg | HCO3 22-26 mEq/L | PaO2 80-100 mmHg.",
+      "INR: Normal 0.8 - 1.2 | Therapeutic Warfarin 2.0 - 3.0 | Mechanical Heart Valve 2.5 - 3.5."
+    ],
+    "sections": [
+      {
+        "title": "1. Core Serum Electrolytes & Critical Interventions",
+        "content": "Electrolyte disturbances alter neuromuscular transmission, cardiac conduction, and cellular volume equilibrium.",
+        "bulletPoints": [
+          "Sodium (Na+): 135 - 145 mEq/L. Hyponatremia (<135) causes cerebral edema, confusion, seizures. Rapid correction risks osmotic demyelination syndrome.",
+          "Potassium (K+): 3.5 - 5.0 mEq/L. Hypokalemia (<3.5): flattened T, U waves, PVCs, muscle weakness. Hyperkalemia (>5.0): peaked T waves, widened QRS, asystole risk.",
+          "Total Calcium (Ca2+): 8.5 - 10.5 mg/dL. Hypocalcemia signs: Positive Chvostek’s (facial twitching) and Trousseau’s (carpal spasm with BP cuff).",
+          "Magnesium (Mg2+): 1.5 - 2.5 mEq/L. Low magnesium predisposes to Torsades de Pointes. Hypermagnesemia depresses deep tendon reflexes."
+        ],
+        "callout": {
+          "type": "danger",
+          "text": "EMERGENCY RULE: Intravenous Potassium Chloride (KCl) must NEVER be administered via IV Push or Bolus! Max peripheral infusion concentration is 10 mEq/hour to prevent fatal cardiac arrest."
+        }
+      },
+      {
+        "title": "2. Complete Blood Count (CBC) Ranges",
+        "content": "Baseline hematologic parameters for infection, anemia, and bleeding risks.",
+        "bulletPoints": [
+          "White Blood Cells (WBC): 4,500 - 11,000 /mcL (Leukocytosis > 11k suggests infection; Neutropenia < 1,500 demands neutropenic precautions).",
+          "Hemoglobin (Hgb): Males: 13.8 - 17.2 g/dL | Females: 12.1 - 15.1 g/dL. Transfusion trigger commonly < 7.0 g/dL in non-cardiac patients.",
+          "Hematocrit (Hct): Males: 40% - 50% | Females: 36% - 48% (Hct is roughly 3x Hemoglobin).",
+          "Platelets (Plt): 150,000 - 450,000 /mcL (<50,000 triggers bleeding precautions; <20,000 risk of spontaneous intracranial hemorrhage)."
+        ]
+      },
+      {
+        "title": "3. Arterial Blood Gas (ABG) Analysis - ROME Framework",
+        "content": "Use the ROME mnemonic (Respiratory Opposite, Metabolic Equal) to interpret arterial balance:",
+        "bulletPoints": [
+          "Step 1: Check pH (Normal: 7.35 - 7.45). < 7.35 = Acidosis | > 7.45 = Alkalosis.",
+          "Step 2: Check PaCO2 (Respiratory, Normal: 35 - 45 mmHg). If pH is LOW and PaCO2 is HIGH -> Respiratory Acidosis.",
+          "Step 3: Check HCO3 (Metabolic, Normal: 22 - 26 mEq/L). If pH is LOW and HCO3 is LOW -> Metabolic Acidosis.",
+          "Compensation: If pH is abnormal and the opposing system is altering to compensate, it is Partially Compensated. If pH has returned to normal range, it is Fully Compensated."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "note-care-plan-acs",
+    "title": "Standardized Nursing Care Plan: Acute Coronary Syndrome & Myocardial Infarction",
+    "category": "notes",
+    "domain": "Adult Health & Med-Surg",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "noteType": "Nursing Care Plan",
+    "readTimeMinutes": 10,
+    "fileSize": "520 KB",
+    "hasAttachment": true,
+    "attachmentName": "Acute_Coronary_Syndrome_NANDA_Care_Plan.pdf",
+    "attachmentSize": "520 KB",
+    "attachmentType": "PDF",
+    "authorOrInstitution": "Cardiac Care Unit Clinical Preceptors",
+    "updatedAt": "2024-09-15",
+    "description": "Evidence-based NANDA-I nursing care plan outlining priority diagnoses, targeted interventions with physiological rationales, and evaluation criteria for acute myocardial infarction.",
+    "tags": [
+      "Care Plan",
+      "NANDA-I",
+      "Cardiology",
+      "MI",
+      "MONA",
+      "Interventions"
+    ],
+    "isFeatured": true,
+    "downloadCount": 3870,
+    "highYieldKeyPoints": [
+      "Priority 1: Acute Pain related to myocardial tissue ischemia secondary to reduced coronary artery perfusion.",
+      "Priority 2: Ineffective Tissue Perfusion (Cardiopulmonary) related to thrombus formation.",
+      "MONA Protocol: Morphine, Oxygen, Nitroglycerin, Aspirin (Chewable 325 mg).",
+      "Door-to-balloon time goal for primary Percutaneous Coronary Intervention (PCI) is < 90 minutes."
+    ],
+    "sections": [
+      {
+        "title": "Nursing Diagnosis 1: Acute Pain (Chest / Anginal)",
+        "content": "Related to myocardial ischemia and accumulation of lactic acid metabolites as evidenced by verbalization of crushing substernal chest pressure radiating to left arm/jaw, diaphoresis, and facial grimacing.",
+        "bulletPoints": [
+          "Intervention 1: Immediately place client on strict bed rest in Semi-Fowler’s position. (Rationale: Reduces venous return to the heart, lowers myocardial workload and oxygen consumption).",
+          "Intervention 2: Administer supplemental oxygen via nasal cannula if SpO2 < 90%. (Rationale: Enhances myocardial arterial oxygen delivery to ischemic border zones).",
+          "Intervention 3: Administer Sublingual Nitroglycerin 0.4 mg every 5 minutes up to 3 doses as prescribed, verifying systolic BP > 90 mmHg prior to each dose. (Rationale: Promotes peripheral and coronary vasodilation, reducing preload and afterload).",
+          "Intervention 4: Administer IV Morphine Sulfate 2-4 mg as titrated. (Rationale: Relieves ischemic chest pain, reduces anxiety, and causes mild venodilation lowering cardiac preload)."
+        ],
+        "callout": {
+          "type": "warning",
+          "text": "Contraindication: Never administer Nitroglycerin if the patient has ingested phosphodiesterase inhibitors (e.g. Sildenafil) within 24-48 hours due to risk of refractory lethal hypotension."
+        }
+      },
+      {
+        "title": "Nursing Diagnosis 2: Risk for Decreased Cardiac Output",
+        "content": "Related to altered myocardial contractility, changes in heart rate and electrical conduction as evidenced by dysrhythmias and decreased blood pressure.",
+        "bulletPoints": [
+          "Intervention: Maintain continuous 12-lead ECG telemetry monitoring. (Rationale: Ventricular fibrillation is the leading cause of early death in acute STEMI).",
+          "Intervention: Monitor hourly intake and urinary output, reporting < 30 mL/hr. (Rationale: Decreased renal perfusion is an early sensitive indicator of failing cardiac output).",
+          "Intervention: Have emergency resuscitation defibrillator and crash cart at bedside ready for immediate countershock."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "note-drug-calc",
+    "title": "Pediatric & Adult Drug Calculation Formula Master Guide",
+    "category": "notes",
+    "domain": "Pharmacology",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "noteType": "Clinical Cheat Sheet",
+    "readTimeMinutes": 7,
+    "fileSize": "390 KB",
+    "authorOrInstitution": "Clinical Skills Lab",
+    "updatedAt": "2024-08-22",
+    "description": "Formulas for oral solids, liquid volumes, IV infusion pump rates (mL/hr), manual gravity drip factor calculations (gtt/min), and continuous microgram/kg/min infusions.",
+    "tags": [
+      "Drug Calculations",
+      "Math",
+      "IV Drip",
+      "Infusion Pump",
+      "Formulas"
+    ],
+    "isFeatured": false,
+    "downloadCount": 3410,
+    "highYieldKeyPoints": [
+      "Basic Formula: (Desired / Have) * Volume = Dosage Amount to Administer.",
+      "Manual IV Drop Rate: (Total Volume in mL * Drop Factor gtt/mL) / Time in Minutes = Drops per minute (gtt/min).",
+      "Infusion Pump Rate: Total Volume (mL) / Time (hours) = mL/hour.",
+      "Microgram/kg/minute: Rate (mL/hr) = (Dose mcg/kg/min * Weight kg * 60 min/hr) / Concentration in mcg/mL."
+    ],
+    "sections": [
+      {
+        "title": "Essential Formulas & Worked Examples",
+        "content": "Step-by-step methods for clinical calculations without rounding errors:",
+        "bulletPoints": [
+          "1. Oral Tablet Formula: Dose Desired / Dose on Hand = Number of tablets. (Example: Order: Metoprolol 50 mg PO. On hand: 25 mg tablets. Calculation: 50 / 25 = 2 tablets).",
+          "2. Liquid Dosage: (Desired / Have) * Quantity. (Example: Order: Amoxicillin 250 mg. On hand: 125 mg / 5 mL. Calculation: (250 / 125) * 5 = 10 mL).",
+          "3. Gravity IV Drip: Volume (mL) * Drop Factor (gtt/mL) / Duration (minutes). (Example: Infuse 1000 mL NS over 8 hours using 15 gtt/mL tubing. 8 hours = 480 mins. (1000 * 15) / 480 = 31.25 -> 31 gtt/min)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "note-cranial-nerves",
+    "title": "Cranial Nerves (I - XII) Assessment & Neurological Mnemonics",
+    "category": "notes",
+    "domain": "Fundamentals & Assessment",
+    "yearLevel": "Year 1 (Foundations)",
+    "noteType": "Clinical Cheat Sheet",
+    "readTimeMinutes": 6,
+    "fileSize": "320 KB",
+    "authorOrInstitution": "Neurology Clinical Nurse Specialists",
+    "updatedAt": "2024-07-14",
+    "description": "Comprehensive cranial nerve examination guide with sensory/motor functions, assessment techniques, pathological signs, and standard mnemonics.",
+    "tags": [
+      "Cranial Nerves",
+      "Neurology",
+      "Physical Assessment",
+      "Mnemonics"
+    ],
+    "isFeatured": false,
+    "downloadCount": 2240,
+    "highYieldKeyPoints": [
+      "Name Mnemonic: \"On Old Olympus’ Towering Tops, A Finn And German Viewed Some Hops\"",
+      "Function Mnemonic (Sensory, Motor, Both): \"Some Say Marry Money, But My Brother Says Big Brains Matter More\"",
+      "CN III, IV, VI tested together via 6 cardinal fields of gaze.",
+      "CN X (Vagus): Assessed via uvula symmetry on saying \"Ah\" and gag reflex."
+    ],
+    "sections": [
+      {
+        "title": "Cranial Nerve Breakdown Table",
+        "content": "Summary of clinical testing methodology for bed-side assessment:",
+        "bulletPoints": [
+          "CN I (Olfactory - Sensory): Smell identification with eyes closed.",
+          "CN II (Optic - Sensory): Snellen visual acuity chart and visual confrontation fields.",
+          "CN III, IV, VI (Oculomotor, Trochlear, Abducens - Motor): EOMs, pupillary light reflex (PERRLA), accommodation.",
+          "CN V (Trigeminal - Both): Light touch across 3 facial branches; clench jaw / masseter muscle tone.",
+          "CN VII (Facial - Both): Smile, frown, puff cheeks, raise eyebrows symmetrically.",
+          "CN VIII (Vestibulocochlear - Sensory): Whisper voice test; Weber and Rinne tuning fork tests.",
+          "CN IX & X (Glossopharyngeal & Vagus - Both): Symmetrical uvula rise; swallowing and speech quality.",
+          "CN XI (Spinal Accessory - Motor): Shoulder shrug against resistance; head turn against resistance.",
+          "CN XII (Hypoglossal - Motor): Tongue protrusion in midline; assess for fasciculations or deviation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc-201",
+    "title": "Surviving Sepsis Campaign: Clinical Practice Guidelines & Hour-1 Resuscitation Bundle",
+    "category": "documents",
+    "domain": "Critical Care & Emergency",
+    "yearLevel": "Year 4 (Leadership & Intensive)",
+    "authorOrInstitution": "International Sepsis Guidelines Committee & Acute Care Nursing Council",
+    "updatedAt": "2024-09-01",
+    "description": "Evidence-based acute resuscitation protocol for bedside nurses, detailing immediate lactate measurement, blood culture timing, broad-spectrum antimicrobial administration, 30 mL/kg crystalloid fluid resuscitation, and vasopressor titration.",
+    "tags": [
+      "Sepsis",
+      "Hour-1 Bundle",
+      "Emergency Protocol",
+      "Critical Care",
+      "Resuscitation",
+      "Lactate"
+    ],
+    "isFeatured": true,
+    "downloadCount": 3890,
+    "documentFormat": "PDF",
+    "documentGuidelineType": "Emergency Protocol",
+    "pageCount": 18,
+    "fileSize": "2.4 MB",
+    "isAvailableOffline": true,
+    "offlineStoredAt": "Device Cache Storage",
+    "highYieldKeyPoints": [
+      "Time Zero: Defined as triage presentation or clinical deterioration onset.",
+      "Measure Serum Lactate immediately; repeat within 2-4 hours if initial > 2.0 mmol/L.",
+      "Obtain blood cultures (2 sets from distinct venipuncture sites) PRIOR to antibiotic administration without causing substantial delay (>45 min).",
+      "Administer broad-spectrum IV antimicrobials within 1 hour of recognition.",
+      "Begin rapid administration of 30 mL/kg balanced crystalloids for hypotension or lactate ≥ 4.0 mmol/L.",
+      "First-line vasopressor of choice is Norepinephrine (titrate for MAP ≥ 65 mmHg)."
+    ],
+    "documentContentText": "SURVIVING SEPSIS CAMPAIGN: CLINICAL PRACTICE PROTOCOL\nREVISION: 2024 INTERNATIONAL CONSENSUS\n\n1. CLINICAL CRITERIA & RECOGNITION (SOFA & qSOFA)\nSepsis is defined as life-threatening organ dysfunction caused by a dysregulated host response to infection.\nqSOFA (Quick Sepsis-related Organ Failure Assessment) Bedside Screening (≥2 flags risk):\n  - Respiratory Rate ≥ 22 breaths/min\n  - Altered Mental Status (GCS < 15)\n  - Systolic Blood Pressure ≤ 100 mmHg\n\n2. THE HOUR-1 RESUSCITATION BUNDLE (ALL TO BE INITIATED WITHIN 60 MINUTES OF TIME ZERO)\nElement 1: Measure Blood Lactate Concentration\n  - Initial lactate > 2 mmol/L reflects cellular hypoperfusion.\n  - Lactate ≥ 4 mmol/L indicates severe tissue dysoxia; requires immediate mandatory 30 mL/kg crystalloid bolus.\n  - Repeat lactate within 2 to 4 hours to verify clearance (therapeutic goal: ≥10-20% reduction every 2 hours).\n\nElement 2: Obtain Blood Cultures Prior to Antibiotics\n  - Draw two sets of blood cultures (one aerobic, one anaerobic per venipuncture site).\n  - Do NOT delay antibiotic start by more than 45 minutes if blood culture procurement is prolonged.\n\nElement 3: Administer Broad-Spectrum IV Antimicrobials\n  - Initiate empiric broad-spectrum coverage tailored to suspected source (e.g., respiratory, urinary, intra-abdominal, central line).\n  - Infuse maximum recommended loading doses to achieve rapid therapeutic serum concentrations.\n\nElement 4: Rapid Administration of 30 mL/kg Intravenous Crystalloid\n  - Indicated for SBP < 90 mmHg, MAP < 65 mmHg, or serum lactate ≥ 4.0 mmol/L.\n  - Use balanced crystalloids (e.g., Lactated Ringer's or Plasma-Lyte) in preference to 0.9% Normal Saline to mitigate hyperchloremic metabolic acidosis.\n  - Infuse via wide-bore peripheral lines (18G or 16G) or central venous catheter.\n\nElement 5: Apply Vasopressors for Refractory Hypotension\n  - If MAP remains < 65 mmHg despite or during fluid administration, initiate vasopressors immediately.\n  - Norepinephrine (Levophed) is the first-line vasopressor (start at 2-5 mcg/min and titrate rapidly).\n  - Target: Mean Arterial Pressure (MAP) ≥ 65 mmHg.\n  - Vasopressin (0.03 units/min fixed infusion) may be added to reduce Norepinephrine requirements.\n\n3. NURSING MONITORING & SAFETY CHECKLIST\n  - Continuous ECG and non-invasive blood pressure monitoring every 5-15 minutes until stabilized.\n  - Strict hourly urine output measurement via Foley catheter with urometer (Target > 0.5 mL/kg/hour).\n  - Frequent dynamic assessment of fluid responsiveness (passive leg raise test, pulse pressure variation).\n  - Escalate to Critical Care / Medical Emergency Team (MET) immediately if refractory to Hour-1 bundle."
+  },
+  {
+    "id": "doc-202",
+    "title": "Standard Operating Procedure: Safe Intravenous Medication Administration & High-Alert Verification",
+    "category": "documents",
+    "domain": "Pharmacology",
+    "yearLevel": "Year 2 (Adult Health & Patho)",
+    "authorOrInstitution": "Hospital Pharmacy & Clinical Nursing Safety Board",
+    "updatedAt": "2024-08-20",
+    "description": "Definitive clinical procedure for intravenous medication administration, including independent double-checking of high-alert medications (Insulin, Heparin, Potassium, Opioids), smart infusion pump programming, and extravasation prevention.",
+    "tags": [
+      "Safe Medication",
+      "IV Administration",
+      "High-Alert",
+      "Pharmacology",
+      "Dosage Calculations"
+    ],
+    "isFeatured": true,
+    "downloadCount": 2980,
+    "documentFormat": "PDF",
+    "documentGuidelineType": "Clinical Procedure",
+    "pageCount": 14,
+    "fileSize": "1.9 MB",
+    "isAvailableOffline": true,
+    "offlineStoredAt": "Device Cache Storage",
+    "highYieldKeyPoints": [
+      "The Eight Rights of Medication: Patient, Drug, Dose, Route, Time, Documentation, Reason, Response.",
+      "Independent Double-Check: Two registered nurses must independently verify calculation, vial, dilution, and pump programming for high-alert drugs.",
+      "High-Alert PINCH Drugs: Potassium, Insulin, Narcotics/Opioids, Chemotherapy, Heparin/Anticoagulants.",
+      "Never administer IV Potassium Chloride as an undiluted IV push (causes fatal cardiac arrest).",
+      "Assess peripheral IV site for patency, blood return, and absence of swelling/erythema prior to any IV push or infusion."
+    ],
+    "documentContentText": "STANDARD OPERATING PROCEDURE: INTRAVENOUS MEDICATION ADMINISTRATION\nSAFETY CODE: SOP-MED-044-REV3\n\n1. PURPOSE & PRINCIPLES\nTo standardize the safe preparation, reconstitution, rate calculation, verification, and administration of intravenous medications to prevent preventable adverse drug events.\n\n2. INDEPENDENT DOUBLE-CHECK PROTOCOL (HIGH-ALERT MEDICATIONS)\nHigh-Alert Drugs (Acronym PINCH):\n  P - Potassium & Concentrated Electrolytes\n  I - Insulin (all subcutaneous and IV infusions)\n  N - Narcotics / Opioids (continuous infusions, PCA pumps)\n  C - Chemotherapeutic Agents\n  H - Heparin & Direct Thrombin Inhibitors\n\nVerification Procedure:\n  1. Nurse 1 reviews the physician order in EHR, selects the drug vial, checks expiration date, and performs dosage calculation.\n  2. Nurse 2 independently inspects the order, recalculates the dose without prompting, and cross-checks the syringe volume or infusion concentration.\n  3. Both nurses jointly verify the patient identity at bedside using two unique identifiers (Full Name, Medical Record Number, Date of Birth).\n  4. Both nurses verify the smart pump channel and drug library limits prior to pressing \"START\".\n\n3. IV SITE ASSESSMENT & COMPATIBILITY\n  - Check IV cannula site: Inspect for warmth, swelling, pallor, or tenderness.\n  - Flush with 3-5 mL of sterile 0.9% Normal Saline before and after medication to confirm patency and clear incompatible residuals.\n  - Consult IV compatibility matrix (Trissel's) before \"piggybacking\" medications into maintenance IV fluids.\n\n4. INFUSION PUMP RATE FORMULA REFERENCE\nFlow Rate (mL/hr) = Total Volume (mL) ÷ Total Time (hours)\nDrip Rate (gtt/min) = [Total Volume (mL) × Drop Factor (gtt/mL)] ÷ Time in Minutes\nDosage Rate (mcg/kg/min) = [Pump Rate (mL/hr) × Concentration (mcg/mL)] ÷ [Weight (kg) × 60]\n\n5. EXTRAVASATION MANAGEMENT\nIf extravasation of vesicant (e.g., Dopamine, Norepinephrine, Chemotherapy, Calcium Chloride) is suspected:\n  - STOP the infusion immediately.\n  - Aspirate residual drug from the catheter with a 3 mL syringe.\n  - Do NOT flush the line. Remove cannula carefully.\n  - Elevate affected extremity above heart level.\n  - Apply warm or cold compress as specific antidote protocol dictates (e.g., Phentolamine for vasopressor extravasation)."
+  },
+  {
+    "id": "doc-203",
+    "title": "Clinical Protocol: Acute Coronary Syndrome (ACS) & STEMI Rapid Assessment Algorithm",
+    "category": "documents",
+    "domain": "Adult Health & Med-Surg",
+    "yearLevel": "Year 3 (Specialties & Peds)",
+    "authorOrInstitution": "Heart & Vascular Nursing Institute",
+    "updatedAt": "2024-07-30",
+    "description": "Standardized guideline for triage, 12-lead ECG acquisition within 10 minutes, high-sensitivity troponin serial testing, MONA-B initial medical management, and primary percutaneous coronary intervention (PCI) preparation.",
+    "tags": [
+      "Cardiology",
+      "ACS",
+      "STEMI",
+      "ECG",
+      "Troponin",
+      "Chest Pain Protocol"
+    ],
+    "isFeatured": false,
+    "downloadCount": 2610,
+    "documentFormat": "DOCX",
+    "documentGuidelineType": "Clinical Procedure",
+    "pageCount": 16,
+    "fileSize": "1.4 MB",
+    "isAvailableOffline": true,
+    "offlineStoredAt": "Device Cache Storage",
+    "highYieldKeyPoints": [
+      "Door-to-ECG Time: Obtain and interpret 12-Lead ECG within 10 minutes of patient arrival with chest discomfort.",
+      "Door-to-Balloon Time (PCI): Target ≤ 90 minutes from first medical contact to device activation in catheterization laboratory.",
+      "STEMI Criteria: ST-segment elevation ≥ 1 mm (0.1 mV) in ≥ 2 contiguous limb leads or ≥ 2 mm in precordial leads V2-V3.",
+      "Nitroglycerin Contraindication: Never administer Nitroglycerin if SBP < 90 mmHg, HR < 50 bpm, suspected right ventricular infarct, or recent phosphodiesterase-5 inhibitor use.",
+      "Administer Aspirin 162-325 mg chewed immediately for non-enteric coated rapid platelet inhibition."
+    ],
+    "documentContentText": "CLINICAL PROTOCOL: ACUTE CORONARY SYNDROME (ACS)\nINSTITUTIONAL CLINICAL STANDARD\n\n1. TRIAGE & IMMEDIATE BEDSIDE ASSESSMENT (WITHIN 10 MINUTES)\nEvery patient presenting with non-traumatic chest pain, pressure, epigastric discomfort, radiating jaw/arm pain, or unexplained acute dyspnea must be triaged immediately as High Acuity.\n  - Step 1: Immediate bed placement with cardiac monitor and continuous pulse oximetry.\n  - Step 2: Obtain 12-lead ECG within 10 minutes. Transmit to emergency physician or cardiologist immediately.\n  - Step 3: Establish large-bore IV access (18G or 20G).\n  - Step 4: Draw baseline cardiac biomarkers (high-sensitivity cardiac Troponin I/T), CBC, electrolytes, coagulation profile.\n\n2. INITIAL MEDICAL THERAPY (MONA-B GUIDELINE)\n  - Oxygen: Administer supplemental O2 ONLY if SpO2 < 90% or patient in respiratory distress (hyperoxia causes coronary vasoconstriction).\n  - Aspirin: 162 mg to 325 mg non-enteric coated, chewed immediately for rapid buccal absorption.\n  - Nitroglycerin: Sublingual 0.4 mg tablet or spray every 5 minutes (maximum 3 doses). Assess BP before each dose.\n      * CONTRAINDICATIONS: SBP < 90 mmHg, heart rate < 50 or > 100 bpm, right ventricular infarction (Leads V3R, V4R ST elevation), or PDE-5 inhibitor use within 24-48 hours.\n  - Morphine Sulfate: 2 to 4 mg IV push for severe ischemic pain refractory to nitrates (use judiciously due to potential delay in antiplatelet absorption).\n  - Beta-Blocker: Oral Metoprolol tartrate 25-50 mg within 24 hours if no signs of heart failure, low cardiac output, or cardiogenic shock risk.\n\n3. REPERFUSION STRATEGY (STEMI)\n  - Primary PCI: Preferred reperfusion modality. Door-to-balloon time goal ≤ 90 minutes.\n  - Fibrinolytic Therapy: Indicated ONLY if anticipated transfer to PCI-capable facility exceeds 120 minutes. Door-to-needle time goal ≤ 30 minutes (e.g., Tenecteplase, Alteplase). Check absolute contraindications for intracranial hemorrhage risk.\n\n4. POST-PROCEDURAL NURSING CARE (FEMORAL OR RADIAL SHEATH)\n  - Radial Artery Band (TR Band): Monitor pulse, capillary refill, warmth, and radial pressure. Wean pressure per titration protocol.\n  - Femoral Access: Strict flat bed rest for 4-6 hours if manual compression used; monitor pedal pulses and groin puncture site for hematoma or pseudoaneurysm."
+  },
+  {
+    "id": "doc-204",
+    "title": "Obstetric Emergency Protocol: Active Management of Postpartum Hemorrhage (PPH)",
+    "category": "documents",
+    "domain": "Maternal & Neonatal",
+    "yearLevel": "Year 3 (Specialties & Peds)",
+    "authorOrInstitution": "Maternal-Fetal Clinical Standards Group",
+    "updatedAt": "2024-08-10",
+    "description": "Stage-based clinical response to postpartum hemorrhage, quantitative blood loss (QBL) measurement, bimanual uterine compression, and stepwise uterotonic drug administration (Oxytocin, Methylergonovine, Carboprost, Misoprostol).",
+    "tags": [
+      "Obstetrics",
+      "Postpartum Hemorrhage",
+      "PPH",
+      "Maternal Safety",
+      "Uterotonics",
+      "Emergency Protocol"
+    ],
+    "isFeatured": false,
+    "downloadCount": 2150,
+    "documentFormat": "PDF",
+    "documentGuidelineType": "Emergency Protocol",
+    "pageCount": 15,
+    "fileSize": "2.1 MB",
+    "isAvailableOffline": true,
+    "offlineStoredAt": "Device Cache Storage",
+    "highYieldKeyPoints": [
+      "PPH Definition: Cumulative blood loss ≥ 1,000 mL or blood loss accompanied by signs/symptoms of hypovolemia within 24 hours post-birth.",
+      "Quantitative Blood Loss (QBL): Mandatory gravimetric weighing of sponges and calibrated collection drapes (visual estimation underestimates loss by 50%).",
+      "The 4 Ts of PPH Etiology: Tone (70%, uterine atony), Trauma (20%), Tissue (10%, retained placenta), Thrombin (1%, coagulopathy).",
+      "Uterine Fundal Massage: Immediate primary nursing intervention for uterine atony (boggy uterus).",
+      "Carboprost Tromethamine (Hemabate) Contraindication: Severe asthma or reactive airway disease (triggers bronchospasm).",
+      "Methylergonovine (Methergine) Contraindication: Hypertension or preeclampsia (causes severe peripheral vasoconstriction)."
+    ],
+    "documentContentText": "OBSTETRIC EMERGENCY GUIDELINE: POSTPARTUM HEMORRHAGE (PPH)\nSTANDARDS OF CARE & STEPWISE PROTOCOL\n\n1. IMMEDIATE ASSESSMENT & STAGE IDENTIFICATION\nMeasure Quantitative Blood Loss (QBL) from delivery: 1 gram of weight increase = 1 mL of blood loss.\n  - Stage 1: Blood loss > 500 mL (vaginal) or > 1000 mL (cesarean) with normal vital signs.\n  - Stage 2: Continued bleeding (loss 1000 - 1500 mL) OR abnormal vitals (HR > 110, BP < 85/45).\n  - Stage 3: Blood loss > 1500 mL, continued hemorrhage, or clinical shock. Activate Massive Transfusion Protocol (MTP).\n\n2. FIRST-LINE NURSING ACTIONS (STAGE 1 - AT BEDPOST)\n  - Vigorously massage the uterine fundus to expel clots and stimulate myometrial contractions.\n  - Empty the urinary bladder via straight catheter (distended bladder displaces uterus and prevents contraction).\n  - Ensure dual wide-bore IV access (18G or 16G).\n  - Administer high-flow supplemental oxygen (10 L/min via non-rebreather mask).\n\n3. STEPWISE UTEROTONIC DRUG ALGORITHM\nOrder of Administration:\n  1. Oxytocin (Pitocin):\n     - Dose: 20 to 40 units in 1,000 mL crystalloid infused at 500 mL/hr, OR 10 units IM.\n     - Note: First-line for all deliveries. Never administer undiluted rapid IV push (causes severe hypotension and arrhythmias).\n  2. Methylergonovine (Methergine):\n     - Dose: 0.2 mg IM every 2-4 hours (maximum 5 doses).\n     - CONTRAINDICATION: Pre-existing hypertension, gestational hypertension, preeclampsia, or coronary disease.\n  3. Carboprost Tromethamine (Hemabate):\n     - Dose: 250 mcg (0.25 mg) deep IM every 15-90 minutes (maximum 8 doses).\n     - CONTRAINDICATION: Active asthma or bronchospasm. Common side effects: profuse diarrhea, pyrexia.\n  4. Misoprostol (Cytotec):\n     - Dose: 800 to 1,000 mcg per rectum, or 600 mcg sublingually/orally.\n     - Safe in hypertensive and asthmatic patients.\n\n4. MECHANICAL & SURGICAL INTERVENTIONS (STAGE 2 - 3)\n  - Perform bimanual uterine compression.\n  - Intrauterine balloon tamponade (Bakri Balloon): Inflate with 300 - 500 mL sterile saline to tamponade placental bed.\n  - Tranexamic Acid (TXA): 1 gram IV over 10 minutes, administered within 3 hours of birth.\n  - Prepare patient for surgical intervention (B-Lynch suture, uterine artery embolization, or emergency hysterectomy)."
+  }
+]
